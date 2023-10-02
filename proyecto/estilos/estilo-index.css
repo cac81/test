@@ -170,10 +170,11 @@ background: #c3112d;
     filter: drop-shadow(5px 5px 5px #222);
     display: flex;
     align-items: center;
+    position: relative;
     padding: 0;
      width: 400%;
      height: 600px;
-     animation: slide 16s infinite ease-in-out;
+     animation: slide 28s infinite ease-in-out;
 
 }
 
@@ -231,7 +232,7 @@ width: 100%;
 
 .main{
     grid-area: main;
-    width: 1280px;
+    width: 98%;
     border: 2px solid red;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -240,7 +241,12 @@ width: 100%;
                         "tel tel tel tel what what what what onl onl onl onl"
                         "serv serv serv serv serv serv serv serv serv serv serv serv";
 
-background-image:url(/imagenes/contacto.jpg);
+    background-image:url(/proyecto/imagenes/contacto.jpg);
+    background-color: #585149;
+    
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    
                     }
 
 
@@ -310,6 +316,8 @@ grid-area: tel;
 .what > a{
     
     background: white;
+    padding: 1px;
+    
 }
 
 
@@ -335,9 +343,13 @@ grid-area: tel;
 
 .online > a{
 background: white;
+padding: 1px;
+font-family: Arial, Helvetica, sans-serif;
 }
 
-
+.online > a:hover{
+    border-top: 5px solid red;
+}
 
 
 
@@ -468,32 +480,13 @@ width: 60%;
     grid-row: 2;
 }
 .mapa1,.mapa2,.mapa3{
-
 height: 70px;
 width: 90%;
 display: flex;
 align-items:center;
 flex-direction: column;
 border: 1px solid orangered;
-
 }
-.mapa1,.mapa2,.mapa3 > p{
-
-}
-
-
-
-
-/* .footer__google >div >iframe{
-    border: black;
-    max-width: 100%;
-    height: 50px; 
-}*/
-
-
-
-
-
 
 
 .footer__desarro{
@@ -525,8 +518,189 @@ border: 1px solid orangered;
 
         grid-template-areas: "encai encai encai encai encai encai encd encd encd encd encd encd"
                         "encc encc encc encc encc encc encc encc encc encc encc encc"
-                        "aside aside aside aside main main main main main main main main"
+                        "aside aside aside aside aside aside aside aside aside aside aside aside"
+                        "main main main main  main main main main main main main main"
                         "footer footer footer footer footer footer footer footer footer footer footer footer";
     
     }
+    .aside{
+        width: 98%;
+        display: flex;
+    }
+
+
+    .carrucel{
+    
+        width:98vw;
+        height:auto ;
+        margin: auto auto 0;
+        overflow: hidden;
+       }
+    
+    
+    
+    .carrucel__ul{
+        border-top: double;
+        border-bottom: double;
+        border-color: black;
+        filter: drop-shadow(5px 5px 5px #222);
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 0;
+         width: 400%;
+         height: auto;
+         animation: slide 20s infinite ease-in-out;
+        
+    
+    
+    
+    
+    
+    }
+    
+  
+    
+    
+    .carrucel__ul > li{
+    
+        list-style: none;
+        width: 100%;
+    }
+    
+    
+    .carrucel__ul > a > img{
+    width: 100%;
+   
+    }
+#img{
+    /*border: 10px solid black;*/
+    width: 100%;
+}
+
+
+@keyframes slide{
+
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .main{
+        grid-area: main;
+        width: 98%;
+        border: 2px solid red;
+        display: grid;
+        
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "tex tex tex tex tex tex tex tex tex tex tex tex"
+                            " tel tel tel tel tel tel tel tel tel tel tel tel" 
+                            "what what what what  what what what what  what what what what" 
+                            "onl onl onl onl onl onl onl onl onl onl onl onl"
+                            "serv serv serv serv serv serv serv serv serv serv serv serv";
+        background-image:url(/proyecto/imagenes/contacto.jpg);
+    
+        background-color: #585149;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        
+        background-attachment: fixed;
+    
+    }
+    
+    .telefono{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+     
+
+.telefono > .txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .what{
+        
+            display: flex;
+            align-items: center;
+            
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+        
+    }
+
+
+    .what > a{
+
+        padding: 5px;
+        margin: 20px;
+        height: 30px;
+
+    }
+
+    .online > a{
+
+        padding: 5px;
+        margin: 20px;
+        height: 30px;
+
+    }
+
+    .online{
+        
+            display: flex;
+            
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+
+        
+    }
+
+    .online > .txt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
