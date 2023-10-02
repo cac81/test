@@ -1,0 +1,45 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    position: relative; 
+}
+
+
+.contenedor img {
+    width: 100%; 
+    height: auto;
+    max-height: 250px;
+    display: block; 
+}
+
+
+.texto {
+    position: absolute; /* Establecer posición absoluta para superponer el texto en la imagen */
+    top: 50%; /* Alinear el texto verticalmente en el centro */
+    left: 50%; /* Alinear el texto horizontalmente en el centro */
+    transform: translate(-50%, -50%); /* Centrar el texto correctamente */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la legibilidad del texto */
+    color: #fff; /* Color del texto */
+    padding: 10px; /* Espacio de relleno alrededor del texto */
+    font-size: 30px; /* Tamaño de fuente del texto */
+}
+
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(169, 156, 245);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(169, 156, 245);
+    color: white;
+  }
+ 
+       
+    
