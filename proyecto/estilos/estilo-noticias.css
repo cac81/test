@@ -1,0 +1,32 @@
+
+
+
+
+
+
+.cabecera-noticias{
+    grid-area: aside;
+    display: flex;
+    background-image: url(/proyecto/imagenes/noticias/fondo\ noticias.jpg);
+    height: 600px;
+    width: 100%;
+    background-color: #585149;
+    
+    background-repeat: no-repeat;
+  
+    
+
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.noticia1{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.noticia1 > img{
+    width: 70vw;
+    
+}
