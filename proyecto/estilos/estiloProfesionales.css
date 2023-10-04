@@ -54,7 +54,7 @@ h1 {
     transition: .5s ease;
   }
   .polaroid:hover .overlay {
-    height: 35%;
+    height: 60%;
   }
   .polaroid {
     position: relative;
@@ -101,4 +101,13 @@ h1 {
   text-align: center;
   width: 100%; 
   max-width: 200px; 
+}
+.Boton {
+  background-color: #02010c;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+
 }
