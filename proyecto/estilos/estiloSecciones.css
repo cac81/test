@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    position: relative; 
+}
+
+
+.contenedor img {
+    width: 100%; 
+    height: auto;
+    max-height: 250px;
+    display: block; 
+}
+
+
+.texto {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+    padding: 10px;
+    font-size: 30px; 
+}
+
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(169, 156, 245);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(169, 156, 245);
+    color: white;
+  }
