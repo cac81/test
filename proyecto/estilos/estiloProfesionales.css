@@ -38,7 +38,7 @@
     transition: .5s ease;
   }
   .polaroid:hover .overlay {
-    height: 35%;
+    height: 65%;
   }
   .polaroid {
     position: relative;
