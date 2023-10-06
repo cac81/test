@@ -1,3 +1,9 @@
+body{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
 section{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -10,19 +16,18 @@ section{
 
 
 
-div {
+div .div {
     text-align: center;
-    text-indent: 50px;
-    padding: 20px; /* Aumenta el espacio entre los div */
-    margin: 20px 0; /* Agrega margen vertical */
-    border: 2px solid rgb(211, 202, 247);
+    text-indent: 20px;
+    padding: 35px; 
+    margin: 20px 10px; 
+    border: 2px 
     border-radius: 10px;
 }
 div:last-child {
-    margin-top: 70px; /* Ajusta el valor según la cantidad de espacio deseada */
+    margin-top: 70px; 
 }
-
-p {
+.texto {
     border: 2px solid rgb(211, 202, 247);
     border-radius: 20px;
     padding: 10px;
@@ -53,6 +58,6 @@ img {
     }
     
     img {
-        width: 100%; /* Ajusta el ancho de las imágenes */
+        width: 100%; 
     }
 }

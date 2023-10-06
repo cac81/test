@@ -1,5 +1,9 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
 h1 {
-  background: linear-gradient(to right, #e6e8f3, #5900ff);
+  background: linear-gradient(to right, #e6e8f3, #37029b);
   text-align: center; 
   padding: 20px 20px; 
   color: white; 
