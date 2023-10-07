@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+.contenedor2 {
+    position: relative; 
+}
+
+.contenedor2 img {
+    width: 100%; 
+    height: auto;
+    max-height: 250px;
+    display: block; 
+    opacity: 0.5;
+}
+
+
+.texto {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+    padding: 10px;
+    font-size: 30px; 
+}
+
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(169, 156, 245);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(169, 156, 245);
+    color: white;
+  }
+  .section {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid rgb(211, 202, 247);
+    border-radius: 15px;
+    margin: 20px auto;
+  }
+  .estudios {
+    font-size: 24px; 
+    font-weight: bold; 
+    text-align: left;
+    margin-top: 10px; 
+} 
+.estudios-lista {
+    text-align: left; 
+    list-style-type: disc; 
+}.botones{
+    text-align: center;text-align: center;
+}
+
+.botones a {
+    display: inline-block; 
+    width: 150px; 
+    margin: 0 auto; 
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}

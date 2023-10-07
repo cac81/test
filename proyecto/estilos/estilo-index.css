@@ -76,7 +76,7 @@ background: #BDB4A7;
     font-size: 12px;
     
 }
-.enc__menu-ul>li>a{
+.menu-ul>li>a{
     color: white;
 }
 .enc__menu-ul>li:hover{
