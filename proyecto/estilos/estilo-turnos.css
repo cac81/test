@@ -23,3 +23,12 @@ select {
     margin-bottom: 10px;
     margin-top: 10px;
   }
+  .turnos{
+    border: 2px solid red;
+  }
+  .medicos{
+    border:  2px solid blue;
+  }
+  .fhturnos{
+    border:  2px solid black;
+  }

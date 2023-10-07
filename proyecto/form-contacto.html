@@ -72,26 +72,26 @@
             <div class="contacto-ingreso-datos">
                 <div class="formulario-contacto">
                     <h3>Contactenos</h3>
-                    <form action="">
+                    <form action="mailto:ejemplo@mail.com"; method="post" enctype="text/plain"  >
                         <p>
                             <label>Nombre Completo</label>
-                            <input type="text" name="nombre">
+                            <input type="text" name="nombre" maxlength="16" placeholder="Alberto Alvarez" required>
                         </p>
                         <p>
                             <label>Direccion de Mail</label>
-                            <input type="email" name="email">
+                            <input type="email" name="email" maxlength="30" placeholder="direccion@ejemplo.com" required>
                         </p>
                         <p>
                             <label>Su nuumero de Telefono</label>
-                            <input type="tel" name="telefono">
+                            <input type="tel" name="telefono" placeholder="341 6554433">
                         </p>
                         <p>
                             <label>Titulo</label>
-                            <input type="text" name="titulo">
+                            <input type="text" maxlength="30" placeholder="ingrese el titulo de su mensaje" name="titulo">
                         </p>
                         <p class="mensaje">
                            <label>Mensaje</label> 
-                            <textarea name="mensaje" rows="3"></textarea>
+                            <textarea name="mensaje" rows="3" placeholder="Escriba aqui su mensaje" required></textarea>
                         </p>
                         <p class="mensaje">
                             <button>
