@@ -4,59 +4,55 @@ body{
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    
-section{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center; 
-    height: 200px;
-    width: 100%;
-    height: auto;
-   
-}
-
-
-
-div .div {
-    text-align: center;
-    text-indent: 20px;
-    padding: 35px; 
-    margin: 20px 10px; 
-    border: 2px 
-    border-radius: 10px;
-}
-div:last-child {
-    margin-top: 70px; 
-}
-.texto {
-    border: 2px solid rgb(211, 202, 247);
-    border-radius: 20px;
-    padding: 10px;
-   
-  }
-
-img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 10px
-  }
 
 .img1 {
-    float: right;
+    clear: both;
+ 
 }
+
+.img1 img {
+    float: left; 
+    margin-right: 20px; 
+}
+
+.img1 p.texto {
+    margin-left: 20px; 
+}
+
+
 .img2 {
-    float: left;
-}
-.img3 {
-    float: right;
-}
-
-
-@media (max-width: 768px) {
-    section {
-        grid-template-columns: repeat(1, 1fr);
-    }
+    clear: both;
     
+}
+
+.img2 img {
+    float: right;
+    margin-right: 20px;
+}
+
+.img2 p.texto {
+    margin-left: 20px;
+}
+
+.img3 {
+    clear: both;
+}
+
+.img3 img {
+    float: left;
+    margin-right: 20px;
+}
+
+.img3 p.texto {
+    margin-left: 20px;
+}
+
+div.img1,
+div.img2,
+div.img3 {
+    padding: 30px;
+}
+@media (max-width: 768px) {
     img {
         width: 100%; 
     }
