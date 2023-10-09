@@ -17,9 +17,10 @@ body{
     grid-template-columns:repeat(12, 1fr);
     grid-auto-rows: 1fr;
     grid-template-areas: "encai encai encai encc encc encc encc encc encc encd encd encd"
+                        "serv serv serv serv serv serv serv serv serv serv serv serv"                    
                         "aside aside aside aside aside aside aside aside aside aside aside aside"
                         "main main main main main main main main main main main main"
-                        "serv serv serv serv serv serv serv serv serv serv serv serv"
+                        
                         "footer footer footer footer footer footer footer footer footer footer footer footer";
     background: rgb(255, 254, 254);
     
@@ -45,6 +46,7 @@ body{
     display:inline-flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
     
     background: rgb(246,0,0);
 background: -moz-linear-gradient(0deg, rgba(246,0,0,1) 0%, rgba(255,255,255,1) 51%);
@@ -80,6 +82,19 @@ background: #BDB4A7;
 .enc__menu-ul>li:hover{
     background: #566573;   
 }
+
+
+.check__menu {
+display: none;
+color: white;
+}
+.check__boton{
+    display: none;
+}
+
+
+
+
 
 /*.enc__menu-ul ol{
 
@@ -347,10 +362,11 @@ grid-area: tel;
 background: white;
 padding: 1px;
 font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .online > a:hover{
-    border-top: 5px solid red;
+    border-bottom: 5px solid red;
 }
 
 
@@ -361,6 +377,8 @@ font-family: Arial, Helvetica, sans-serif;
     grid-area: serv;
     display: flex;
 }
+
+
 
 
 
@@ -382,6 +400,9 @@ font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(0deg, rgba(246,0,0,1) 0%, rgba(255,255,255,1) 51%);*/
     /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f60000",endColorstr="#ffffff",GradientType=1);*/  
 }
+
+
+
 
 .footer__redes{
     border: 2px solid black;
@@ -517,6 +538,16 @@ border: 1px solid orangered;
 
 
 
+
+
+
+/* media query*/ /* media query*/ /* media query*/ /* media query*/ /* media query*/
+/* media query*/ /* media query*/ /* media query*/ /* media query*/ /* media query*/
+/* media query*/ /* media query*/ /* media query*/ /* media query*/ /* media query*/
+
+
+
+
 @media screen and (max-width: 768px)
 {
     .contenedor{
@@ -527,14 +558,108 @@ border: 1px solid orangered;
 
 
 
-        grid-template-areas: "encai encai encai encai encai encai encd encd encd encd encd encd"
-                        "encc encc encc encc encc encc encc encc encc encc encc encc"
+        grid-template-areas: "encai encai encai encai encc encc encc encc encd encd encd encd"
+                       /* "encc encc encc encc encc encc encc encc encc encc encc encc"*/
+                       "serv serv serv serv serv serv serv serv serv serv serv serv"
                         "aside aside aside aside aside aside aside aside aside aside aside aside"
                         "main main main main  main main main main main main main main"
-                        "serv serv serv serv serv serv serv serv serv serv serv serv"
+                        
                         "footer footer footer footer footer footer footer footer footer footer footer footer";
     
     }
+
+
+
+    .enc__menu{
+
+        
+        width: 100%;
+        height: 100%;
+        top: 80px;
+        display: flex;
+        text-align: center;
+        transition: all .4s;
+        
+
+    }
+
+
+
+    .enc__menu-ul{
+        position: fixed;
+        background-color: red;
+        left: -200%;
+         display: block;
+         z-index: 10;
+    }
+
+
+    .enc__menu-ul > li{
+      
+        background-color: #fff;
+       
+      
+    }
+
+    .enc__menu-ul > li > a {
+        color: black;
+        
+
+    }
+
+
+
+    .check__menu:checked ~ ul{
+        left: 0%;
+        left: 0%;
+        height: 100%;
+        width: 98%;
+        top: 73px;
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    .check__menu:checked ~ ul > li {
+
+        min-width: fit-content;
+        width: 70%;
+        height: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+
+    
+
+
+    .check__menu:checked ~ ul > li > a{
+        font-size: 30px;
+
+
+    }
+
+
+    .check__boton{
+        display: block;
+        color: #fff;
+       
+    }
+
+
+    
+
+
+
+
+
+
+
     .aside{
         width: 98%;
         display: flex;
@@ -633,6 +758,7 @@ border: 1px solid orangered;
     .main{
         grid-area: main;
         width: 98%;
+        height: 600px;
         border: 2px solid red;
         display: grid;
         
@@ -642,7 +768,7 @@ border: 1px solid orangered;
                             " tel tel tel tel tel tel tel tel tel tel tel tel" 
                             "what what what what  what what what what  what what what what" 
                             "onl onl onl onl onl onl onl onl onl onl onl onl"
-                            "serv serv serv serv serv serv serv serv serv serv serv serv";
+                            ;
         background-image:url(/proyecto/imagenes/contacto.jpg);
     
         background-color: #585149;
@@ -661,12 +787,17 @@ border: 1px solid orangered;
         align-items: center;
     }
      
-
-.telefono > .txt{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .tel-icono{
+        font-size: 12.5px;
+        width: 25px;
+        height: 25px;
+    }
+    .telefono > .txt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
 
     .what{
         
@@ -679,26 +810,44 @@ border: 1px solid orangered;
         
     }
 
+    .what-ico{
+        font-size: 12.5px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .what > .txt{
+        font-size: 12px;
+    }
 
     .what > a{
-
+        
         padding: 5px;
         margin: 20px;
-        height: 30px;
+        height: 15px;
 
     }
 
+    .onl-ico{
+        font-size: 12.5px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .online > .txt{
+        font-size: 12px;
+    }
     .online > a{
 
         padding: 5px;
-        margin: 20px;
-        height: 30px;
+        margin: 10px;
+        height: 15px;
 
     }
 
     .online{
         
-            display: flex;
+    display: flex;
             
     justify-content: space-evenly;
     flex-direction: row;
@@ -713,6 +862,24 @@ border: 1px solid orangered;
         flex-direction: column;
         align-items: center;
     }
+
+
+
+
+    .footer__redes-ul li a {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+
+
+
+    
+
+.footer__google > div > p {
+    color: white;
+    font-size: 10px;
+}
 
 
 }
