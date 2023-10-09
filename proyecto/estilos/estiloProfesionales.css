@@ -71,7 +71,7 @@ h1 {
     height: auto;
   }
   .text-p {
-    font-size: 16px;
+    font-size: 14px;
   }
   
 .section {
@@ -109,7 +109,7 @@ h1 {
 .Boton {
   background-color: #02010c;
   color: white;
-  padding: 15px 25px;
+  padding: 10px 2px;
   text-decoration: none;
   cursor: pointer;
   border: none;
