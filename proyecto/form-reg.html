@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
-    
     <div class="contenedor">
         
        
@@ -69,204 +68,109 @@
 
 
 
-        <div class="contenedor-pacientes">
 
-            <h1 class="titulo">Ingreso pacientes</h1>
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
+
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Correo Electronico" id="login-correo">
+                        <input type="password" placeholder="Contraseña" id="login-contraseña">
+                        <button>Entrar</button>
+                    </form>
+
+                    <!--Register-->
+                    <form action="" class="formulario__register">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre" id="reg-nombre">
+                        <input type="text" placeholder="Apellido" id="reg-apellido">
+                        <input type="text" placeholder="Correo Electronico" id="reg-mail">
+                        <input type="text" placeholder="telefono" id="reg-tel">
+                        <input type="password" placeholder="Contraseña" id="reg-contraseña">
+                        <input type="password" placeholder="Repita su contraseña" id="reg-rep-contraseña">
+                        <button>Regístrarse</button>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="footer">
+
+                <div class="footer__redes">
     
-            <div class="ingreso-datos">
-                
-                <div class="formulario-ingreso">
-                
-                    <h2>formulario de ingreso</h2>
-                
-                    <form action=""  id="form-ingreso">
-                      
-                        <div>
-                            <label for="email">Direccion de Mail</label>
-                            <input type="email" name="email" id="email" autocomplete="email" placeholder="mail@ejemplo.com">
-                        </div>
-                        <div>
-                            <label for="contraseña">Ingrese su contraseña</label>
-                            <input type="password" name="contraseña" id="contraseña">
-                        </div>
+                    <ul class="footer__redes-ul">
+                        <li>
+                            <a href="http://"><i class="fa-brands fa-square-instagram "></i></a>
+                        </li>
+                        <li>
+                            <a href="http://"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://"><i class="fa-brands fa-x-twitter "></i></a>
+                        </li>
+    
+                    </ul>
+    
+    
+                </div>
+    
+                <div class="footer__google">
+                    <p>Nuestras sucursales</p>
+                    
+                    <div class="mapa1">
+                        <p>San martin 1510 caba</p>
+                        <a href="https://maps.app.goo.gl/gX51wjz5AHw8qnJg6" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.2643260907413!2d-60.66692570977339!3d-32.92308419677908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654ae5f88e23b%3A0x3aca70357c973d69!2sCSA%2C%20Gorriti%20243%2C%20S2013%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1695307689775!5m2!1ses!2sar" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Sucursal1</iframe> -->
+                    </div>
+                    <div class="mapa2">
+                        <p>San martin 1520 - Rosario</p>
+                        <a href="https://maps.app.goo.gl/SLswo5iqNM2K8FUV7" target="_blank" ><i class="fa-solid fa-location-dot"></i></a>
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.5993643119607!2d-58.439188202454226!3d-34.57383779172218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5bfdfddaad7%3A0xc6fbe48a99bab64e!2sSantos%20Dumont%202436%2C%20C1426%20CABA!5e0!3m2!1ses!2sar!4v1695308125687!5m2!1ses!2sar" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Sucursal2</iframe> -->
+                    </div>
+                    <div class="mapa3">
+                        <p>San martin 1520 - Cordoba</p>
+                        <a href="https://maps.app.goo.gl/Zsm5aGrBSXEuNWJy8" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
                         
-                        <div>
-                            <button>
-                                <input type="submit" value="ingresar" class="optioninput">
-                            </button>
-                        </div>
-                    
-                        <div>
-                            <button>
-                                <input  type="button" value="registrese aqui" id="btnregaqui">
-                            </button>
-                        </div>
-                        <div>
-                            <button>
-                                <input  type="button" value="olvide mi contraseña" id="btnolvide">
-                            </button>
-                        </div>
-                    </form>
-                
+                        
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.37620031840214!2d-58.390956475073494!3d-34.6295763797843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb234bbac72f%3A0x767a3c88e769dac!2sAv.%20Entre%20R%C3%ADos%201812%2C%20C1133AAG%20CABA!5e0!3m2!1ses!2sar!4v1695308183753!5m2!1ses!2sar" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Sucursal3</iframe> -->
+                    </div>
+    
                 </div>
-
-                
-                
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-            <div class="reg-datos">
-                 <div class="formulario-reg">
-                
-                    <h2>formulario de Registro</h2>
+    
+                <div class="footer__desarro">
                     
-                    <form id="form-reg" action="">
-                  
-                        <div>
-                            <label for="email-reg">Ingrese su direccion de mail</label>
-                            <input type="email" name="email-reg" id="email-reg" autocomplete="email" placeholder="mail@ejemplo.com">
-                        </div>
-                    
-                        <div>
-                            <label for="contraseña-reg">Ingrese su contraseña</label>
-                            <input type="password" name="contraseña-reg" id="contraseña-reg">
-                        </div>
-                    
-                        <div>
-                            <label for="repcontraseña">Repita su contraseña</label>
-                            <input type="password" name="repcontraseña" id="repcontraseña">
-                        </div>
-                    
-                         <div>
-                            <label for="nombre">Ingrese su nombre</label>
-                            <input type="text" name="nombre" id="nombre">
-                        </div>
-                    
-                        <div>
-                            <label for="apellido">Ingrese su apellido</label>
-                            <input type="text" name="apellido" id="apellido">
-                        </div>
-                    
-                        <div>
-                            <label for="telefono">ingrese su número de Telefono</label>
-                            <input type="tel" name="telefono" id="telefono" placeholder="xxx xxxxxxxx">
-                        </div>
-                    
-                        <div>
-                            <label for="dni">Ingrese su DNI</label>
-                            <input type="number" name="dni" id="dni" placeholder="DNI sin puntos">
-                        </div>
-                   
-                        <div>
-                            <button>
-                                <input type="submit" value="Registrarme" class="optioninput">
-                            </button>
-                        </div>
-
-                        <div>
-                            <button>
-                                <input type="button" value="Iniciar Sesion" id="btnIniciar">
-                            </button>
-                        </div>
-                    
-                    </form>
-            
-                  </div>
-
+                    <img src="imagenes/desarrollo-software.jpg" alt="">
                 </div>
-            
+    
             </div>
     
-
-
-
-
-         
-
-
-
-
-
-
-
-
-
-
-
-        <div class="footer">
-
-            <div class="footer__redes">
-
-                <ul class="footer__redes-ul">
-                    <li>
-                        <a href="http://"><i class="fa-brands fa-square-instagram "></i></a>
-                    </li>
-                    <li>
-                        <a href="http://"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="http://"><i class="fa-brands fa-x-twitter "></i></a>
-                    </li>
-
-                </ul>
-
-
-            </div>
-
-            <div class="footer__google">
-                <p>Nuestras sucursales</p>
-                
-                <div class="mapa1">
-                    <p>San martin 1510 caba</p>
-                    <a href="https://maps.app.goo.gl/gX51wjz5AHw8qnJg6" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.2643260907413!2d-60.66692570977339!3d-32.92308419677908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654ae5f88e23b%3A0x3aca70357c973d69!2sCSA%2C%20Gorriti%20243%2C%20S2013%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1695307689775!5m2!1ses!2sar" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Sucursal1</iframe> -->
-                </div>
-                <div class="mapa2">
-                    <p>San martin 1520 - Rosario</p>
-                    <a href="https://maps.app.goo.gl/SLswo5iqNM2K8FUV7" target="_blank" ><i class="fa-solid fa-location-dot"></i></a>
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.5993643119607!2d-58.439188202454226!3d-34.57383779172218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5bfdfddaad7%3A0xc6fbe48a99bab64e!2sSantos%20Dumont%202436%2C%20C1426%20CABA!5e0!3m2!1ses!2sar!4v1695308125687!5m2!1ses!2sar" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Sucursal2</iframe> -->
-                </div>
-                <div class="mapa3">
-                    <p>San martin 1520 - Cordoba</p>
-                    <a href="https://maps.app.goo.gl/Zsm5aGrBSXEuNWJy8" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-                    
-                    
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.37620031840214!2d-58.390956475073494!3d-34.6295763797843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb234bbac72f%3A0x767a3c88e769dac!2sAv.%20Entre%20R%C3%ADos%201812%2C%20C1133AAG%20CABA!5e0!3m2!1ses!2sar!4v1695308183753!5m2!1ses!2sar" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Sucursal3</iframe> -->
-                </div>
-
-            </div>
-
-            <div class="footer__desarro">
-                
-                <img src="imagenes/desarrollo-software.jpg" alt="">
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
-   
 
-    <script src="javascript/js-registro-clientes.js"></script>
+        <script src="javascript/registro-clientes.js"></script>
 </body>
 </html>
