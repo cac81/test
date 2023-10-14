@@ -16,43 +16,51 @@ ul {
     font-size: 3em;
 }
 
+h2{
+    text-align: center;
+}
 
 
-.contacto-ingreso-datos {
+
+
+
+.ingreso-datos, .reg-datos{
     box-shadow: 0 0 20px 0 rgba(12, 0, 0, 0.993);
     border-radius: 5%;
     
 }
 
-.contacto-ingreso-datos > * {
+.ingreso-datos > *, .reg-datos > * {
     padding: 1em;
 }
 
-.formulario-contacto{
+.formulario-ingreso, .formulario-reg{
     background: #18aff5;
     border-radius: 5%;
 }
 
-.formulario-contacto form {
+.formulario-ingreso form, .formulario-reg form {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.formulario-contacto form label {
+.formulario-ingreso form label, .formulario-reg form label {
     display: block;
 }
 
-.formulario-contacto form div {
+.formulario-ingreso form div, .formulario-reg form div {
     margin: 0;
     padding: 1em;
 }
 
-.formulario-contacto form .mensaje {
+.formulario-ingreso form .mensaje, .formulario-reg form .mensaje {
     grid-column: 1 / 3;
 }
 
-.formulario-contacto form button,
-.formulario-contacto form input {
+.formulario-ingreso form button,
+.formulario-ingreso form input,
+.formulario-reg form button,
+.formulario-reg form input {
     width: 100%;
     padding: .7em;
     border: none;
@@ -62,15 +70,17 @@ ul {
     border-bottom: 1px solid #d63031;
 }
 
-.formulario-contacto form button {
+.formulario-ingreso form button, .formulario-reg form button {
     background: #B70E21;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
 }
 
-.formulario-contacto form button:hover,
-.formulario-contacto form button:focus {
+.formulario-ingreso form button:hover,
+.formulario-ingreso form button:focus,
+.formulario-reg form button:hover,
+.formulario-reg form button:focus {
     background: #d63031;
     color: #fff;
     transition: background-color 1s ease-out;
@@ -79,15 +89,20 @@ ul {
 
 
 
+
 /* LARGE SIZE */
 @media(min-width: 700px) {
   
-    .contacto-ingreso-datos {
+    .ingreso-datos, .reg-datos {
         display: grid;
         
     }
-    .contacto-ingreso-datos > * {
+    .ingreso-datos > *, .reg-datos > * {
         padding: 2em;
     }
     
+   
+.reg-datos{
+    display: none;
+}
 }

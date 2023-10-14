@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactenos</title>
+  
     <link rel="stylesheet" href="estilos/estilo-reg.css">
+    
     <link rel="stylesheet" href="estilos/estilo-index.css">
-    <script src="https://kit.fontawesome.com/5108c67185.js" crossorigin="anonymous"></script>
+    
+    
+    
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -69,47 +73,37 @@
 
             <h1 class="titulo">Ingreso pacientes</h1>
     
-            <div class="contacto-ingreso-datos">
+            <div class="ingreso-datos">
                 
-                <div class="formulario-contacto">
-                    <h3>formulario de ingreso</h3>
-                    <form action="">
+                <div class="formulario-ingreso">
+                
+                    <h2>formulario de ingreso</h2>
+                
+                    <form action=""  id="form-ingreso">
                       
                         <div>
-                            <label>Direccion de Mail</label>
-                            <input type="email" name="email">
+                            <label for="email">Direccion de Mail</label>
+                            <input type="email" name="email" id="email" autocomplete="email" placeholder="mail@ejemplo.com">
                         </div>
                         <div>
-                            <label>Ingrese su contraseña</label>
-                            <input type="text" name="nombre">
+                            <label for="contraseña">Ingrese su contraseña</label>
+                            <input type="password" name="contraseña" id="contraseña">
                         </div>
                         
                         <div>
-                            <label>repita su contraseña</label>
-                            <input type="text" name="nombre">
-                        </div>
-                        
-                        <div>
-                            <label>Nombre Completo</label>
-                            <input type="text" name="nombre">
-                        </div>
-                        <div>
-                            <label>Su numero de Telefono</label>
-                            <input type="tel" name="telefono">
-                        </div>
-                        <div>
-                            <label>Ingrese su DNI sin puntos</label>
-                            <input type="number" name="dni">
-                        </div>
-                       
-                    <div>
                             <button>
-                                <input type="submit" value="Enviar" class="optioninput">
+                                <input type="submit" value="ingresar" class="optioninput">
                             </button>
-                    </div>
-                        <dIv>
+                        </div>
+                    
+                        <div>
                             <button>
-                                Cancelar
+                                <input  type="button" value="registrese aqui" id="btnregaqui">
+                            </button>
+                        </div>
+                        <div>
+                            <button>
+                                <input  type="button" value="olvide mi contraseña" id="btnolvide">
                             </button>
                         </div>
                     </form>
@@ -119,17 +113,84 @@
                 
                 
             </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="reg-datos">
+                 <div class="formulario-reg">
+                
+                    <h2>formulario de Registro</h2>
+                    
+                    <form id="form-reg" action="">
+                  
+                        <div>
+                            <label for="email-reg">Ingrese su direccion de mail</label>
+                            <input type="email" name="email-reg" id="email-reg" autocomplete="email" placeholder="mail@ejemplo.com">
+                        </div>
+                    
+                        <div>
+                            <label for="contraseña-reg">Ingrese su contraseña</label>
+                            <input type="password" name="contraseña-reg" id="contraseña-reg">
+                        </div>
+                    
+                        <div>
+                            <label for="repcontraseña">Repita su contraseña</label>
+                            <input type="password" name="repcontraseña" id="repcontraseña">
+                        </div>
+                    
+                         <div>
+                            <label for="nombre">Ingrese su nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+                    
+                        <div>
+                            <label for="apellido">Ingrese su apellido</label>
+                            <input type="text" name="apellido" id="apellido">
+                        </div>
+                    
+                        <div>
+                            <label for="telefono">ingrese su número de Telefono</label>
+                            <input type="tel" name="telefono" id="telefono" placeholder="xxx xxxxxxxx">
+                        </div>
+                    
+                        <div>
+                            <label for="dni">Ingrese su DNI</label>
+                            <input type="number" name="dni" id="dni" placeholder="DNI sin puntos">
+                        </div>
+                   
+                        <div>
+                            <button>
+                                <input type="submit" value="Registrarme" class="optioninput">
+                            </button>
+                        </div>
+
+                        <div>
+                            <button>
+                                <input type="button" value="Iniciar Sesion" id="btnIniciar">
+                            </button>
+                        </div>
+                    
+                    </form>
+            
+                  </div>
+
+                </div>
+            
+            </div>
     
-            <p>olvide mi contraseña</p>
-            <p>quiero registrarme</p>
-
-        </div>
-    
 
 
 
 
-
+         
 
 
 
@@ -206,6 +267,6 @@
     </div>
    
 
-
+    <script src="javascript/js-registro-clientes.js"></script>
 </body>
 </html>

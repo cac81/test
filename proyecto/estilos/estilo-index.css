@@ -191,6 +191,14 @@ color: white;
     
 }
 
+.oculto-derma{
+    display: none;
+}
+
+.muestro-texto{
+    display:block;
+}
+
 .servicios * > p{
     text-align: justify;
     padding: 10px;
@@ -317,6 +325,15 @@ color: white;
     max-width: 30%; /* Establece el ancho máximo de la imagen al 50% del contenedor */
     margin-right: 20px; /* Agrega espacio a la derecha de la imagen para separarla del párrafo */
 }
+
+
+
+
+
+
+
+
+
 
 
 
