@@ -188,6 +188,14 @@ color: white;
     
 }
 
+.oculto-derma{
+    display: none;
+}
+
+.muestro-texto{
+    display:block;
+}
+
 .servicios * > p{
     text-align: justify;
     padding: 10px;
@@ -228,6 +236,15 @@ color: white;
     justify-content: flex-start;
     flex-direction: column;
 }
+
+
+
+
+
+
+
+
+
 
 
 
