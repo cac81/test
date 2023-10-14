@@ -1,64 +1,47 @@
-body{
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   
-section{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center; 
-    height: 200px;
-    width: 100%;
-    height: auto;
-   
-}
-
-
-
-div .div {
-    text-align: center;
-    text-indent: 20px;
-    padding: 35px; 
-    margin: 20px 10px; 
-    border: 2px 
-    /*border-radius: 10px;*/
-}
-div:last-child {
-    margin-top: 70px; 
-}
-.texto {
-    border: 2px solid rgb(211, 202, 247);
+.texto  {
+    border: 2px solid #789dbd;
     border-radius: 20px;
     padding: 10px;
+    text-align: center;
+    padding: 20px;
    
   }
+.contenedora{
+  text-align: center;
+    text-indent: 50px;
+    /*border: 3px solid #042b46;*/
+    padding: 20px 20px;
+}
+.imagenes{
+  grid-area: aside;
+  pad: 10px;
+  
+}
 
-img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 10px
-  }
+.imagenes1, .imagenes2, .imagenes3{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 .img1 {
-    float: right;
+  float: right;
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px
 }
 .img2 {
-    float: left;
+  float: left;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px
 }
 .img3 {
-    float: right;
+  float: right;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px
 }
 
-
-@media (max-width: 768px) {
-    section {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    img {
-        width: 100%; 
-    }
-}
-}
