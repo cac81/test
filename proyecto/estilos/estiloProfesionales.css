@@ -1,17 +1,33 @@
+
+
+.grilla-medicos{
+  display: grid;
+  grid-area: aside;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr)
-   
-    
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr)
+ 
   
-  .grid-container > div {
-    
-    text-align: center;
-    padding: 10px 0;
-    font-size: 30px;
-   
-  }
+}
+
+.grid-container > div {
+  
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+ 
+}
   
   div.polaroid {
     width: 80%;
@@ -20,6 +36,7 @@
     margin-bottom: 25px;
     margin: 0 auto; 
     justify-content: center;
+    height: 100%;
   }
   
   div.container {
