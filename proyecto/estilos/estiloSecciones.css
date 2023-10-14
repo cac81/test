@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+/*body, html {
+=======
 body{
+>>>>>>> 6002d83a677167bbc93d6b333c2b80cfba0578eb
     margin: 0;
     padding: 0;
     display: flex;
@@ -94,6 +98,11 @@ titulo2{
     background-color: rgb(169, 156, 245);
     color: white;
     border: none;
+<<<<<<< HEAD
+}
+*/
+=======
     border-radius: 5px;
     margin-right: 10px; 
 }
+>>>>>>> 6002d83a677167bbc93d6b333c2b80cfba0578eb

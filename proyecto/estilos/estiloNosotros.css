@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+.texto  {
+    border: 2px solid #789dbd;
+=======
 body{
     padding: 0;
     border: 0;
@@ -29,10 +33,54 @@ div:last-child {
 }
 .texto {
     border: 2px solid rgb(211, 202, 247);
+>>>>>>> 6002d83a677167bbc93d6b333c2b80cfba0578eb
     border-radius: 20px;
     padding: 10px;
+    text-align: center;
+    padding: 20px;
    
   }
+<<<<<<< HEAD
+.contenedora{
+  text-align: center;
+    text-indent: 50px;
+    /*border: 3px solid #042b46;*/
+    padding: 20px 20px;
+}
+.imagenes{
+  grid-area: aside;
+  pad: 10px;
+  
+}
+
+.imagenes1, .imagenes2, .imagenes3{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.img1 {
+  float: right;
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px
+}
+.img2 {
+  float: left;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px
+}
+.img3 {
+  float: right;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px
+}
+
+=======
 
 img {
     width: 500px;
@@ -62,3 +110,4 @@ img {
     }
 }
 }
+>>>>>>> 6002d83a677167bbc93d6b333c2b80cfba0578eb
