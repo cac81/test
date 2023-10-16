@@ -117,10 +117,10 @@ select {
 
   }
 
-  .horario-1{
+  .horario-1, .horario-2, .horario-3{
     cursor: pointer;
   }
-  .horario-1:hover{
+  .horario-1:hover, .horario-2:hover, .horario-3:hover{
     background: blue;
   }
  

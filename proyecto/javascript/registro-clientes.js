@@ -23,7 +23,7 @@ function email(loginCorreo){
             } 
             else 
             {
-            alert("La dirección de email tien un formato incorrecta!.");
+            alert("La dirección de email tiene un formato incorrecto!.");
             return false;
             }
 }
