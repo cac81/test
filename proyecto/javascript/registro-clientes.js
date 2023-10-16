@@ -132,8 +132,8 @@ function registrarse(nombre, apellido, email, tel, contraseña, repContraseña){
         
              }
         
-    window.alert("antes del llamado");
-    //validar cadena nombre y apellido  
+    
+    
     valtexto(nombre);
     valtexto(apellido);
     validartelefono(tel);
