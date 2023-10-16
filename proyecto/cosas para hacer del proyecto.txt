@@ -1,0 +1,45 @@
+notas a revisar
+html index
+
+logo de la clinica tiene en css ancho fijo 150px, cuando se achica la pagina queda solapado con el menu.
+podriamos probar dandole un margin al logo, creo que queda muy pegado al borde superior de la pagina
+hay un error en la linea 19 del js de index.
+las tabs de servicos en index cuando se achica la pagina quedan desordenadas
+el parrajo de las tab de servicios deberiamos justificarlo, creo que quedaria mejor, sobre todo cuando se achica la pag.
+Leo podriamos agregar el nombre de la clinica arriba de nuestros servicios.
+habria que centrar las letras de nuestros servicio 
+hay que cambiar en el css la parte de los medios para pedir turnos cuando entra en funcionamiento el responsive
+hay que achicar las letras de nuestras sucursales en el responsive.
+
+
+html nosotros
+
+revisar la disposicion y tamaño de las imagenes
+
+
+
+html turnos online
+
+cambiar el logo de la clinica
+cambiar donde lleva al hacer click en el logo
+agregar js para hacer dinamica la seleccion de los turnos
+
+
+
+
+html contactenos
+
+cambiar estilo del formulario (definir que estilo le vamos a dar)
+validar formulario por js
+
+
+
+html form-reg registro de clientes.
+
+arreglar js, no funciona.
+definir estilo del formulario.
+
+
+
+html log-in ingreso medicos
+definir estilo del formulario
