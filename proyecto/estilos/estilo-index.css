@@ -41,7 +41,7 @@ a{
 .enc__home img{
     grid-area: encai;
     position: relative;
-     width: 150px;
+     width: 100%;
      height:auto;
 }
 .enc__menu{
@@ -170,12 +170,12 @@ color: white;
   
   .servicio{
     display: flex;
-    grid-area:  serv;
+   
     grid-template-columns: repeat(12, 1fr) ;
     grid-template-rows: repeat(2, 1fr);
     background-color: #fff;
     width: 100%;
-    
+    justify-content: center;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 30px 40px;
@@ -183,11 +183,15 @@ color: white;
   }
   
   .servicio-medico{
-    display: grid;
+    
     grid-area: serv;
+    display: grid;
+    
+    
   }
   .servicio-medico h1{
-   color: #2f3e47;
+   
+    color: #2f3e47;
     text-align: center;
   }
   
@@ -1068,14 +1072,17 @@ flex-direction: column;
         line-height: 20px;
     }
 
-
-
-    
-
 .footer__google > div > p {
     color: white;
     font-size: 10px;
+
+
+
 }
-
-
+.footer__google > p {
+    font-size: 15px;
+    
+    margin: 0;
+    padding: 0;
+}
 }
