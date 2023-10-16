@@ -483,6 +483,9 @@ text-decoration: bl;
 .telefono{
     
 grid-area: tel;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .tel-icono{
@@ -502,12 +505,17 @@ grid-area: tel;
     color: #577486;
    /* font-family: Georgia, 'Times New Roman', Times, serif;*/
 }
-
+.telefono > .txt{
+    text-align: center;
+}
 
 
 .what{
     
     grid-area: what;
+    display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .what-ico{
@@ -529,13 +537,18 @@ grid-area: tel;
     padding: 1px;
     
 }
-
+.what > .txt{
+    text-align: center;
+}
 
 
 
 .online{
     
     grid-area: onl;
+    display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .onl-ico{
@@ -562,7 +575,9 @@ padding: 1px;
 }
 
 
-
+.online > .txt{
+    text-align: center;
+}
 
 
 
@@ -761,7 +776,7 @@ flex-direction: column;
         top: 80px;
         display: flex;
         text-align: center;
-        transition: all .4s;
+        transition: all 0.4s;
         
 
     }
@@ -770,16 +785,18 @@ flex-direction: column;
 
     .enc__menu-ul{
         position: fixed;
-        background-color: red;
+        background-color: #577486;
         left: -200%;
          display: block;
          z-index: 10;
+         
     }
 
 
     .enc__menu-ul > li{
       
         background-color: #fff;
+        border-radius: 15px;
        
       
     }
@@ -959,7 +976,7 @@ flex-direction: column;
         grid-area: main;
         width: 98%;
         height: 600px;
-        border: 2px solid red;
+        
         display: grid;
         
         grid-template-columns: repeat(12, 1fr);
@@ -969,9 +986,9 @@ flex-direction: column;
                             "what what what what  what what what what  what what what what" 
                             "onl onl onl onl onl onl onl onl onl onl onl onl"
                             ;
-        background-image:url(/proyecto/imagenes/contacto.jpg);
+        
     
-        background-color: #585149;
+        background-color: d9efed;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -979,7 +996,7 @@ flex-direction: column;
         background-attachment: fixed;
     
     }
-    
+   
     .telefono{
         display: flex;
         justify-content: center;
@@ -997,6 +1014,7 @@ flex-direction: column;
         flex-direction: column;
         align-items: center;
         font-size: 12px;
+        
     }
 
     .what{
