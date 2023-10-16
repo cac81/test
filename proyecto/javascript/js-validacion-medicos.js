@@ -1,5 +1,6 @@
 
-function validarFormulario(usuario, contraseña){
+function validarFormulario(usuario, contraseña)
+{
     var usuario= document.getElementById("usuario").value.trim();
     var contraseña = document.getElementById("contraseña").value.trim();
         

@@ -1,9 +1,159 @@
-//Ejecutando funciones
-document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
-document.getElementById("btn__registrarse").addEventListener("click", register);
+//llamada a funciones movimiento de cajas
+document.getElementById("btn__iniciar-sesion").addEventListener("click", irIniciarSesion);
+document.getElementById("btn__irRegistrarse").addEventListener("click", irRegistro);
 window.addEventListener("resize", anchoPage);
 
-//Declarando variables
+
+//llamada a funciones validacion de input
+//document.getElementById("btn__entrar").addEventListener("click", inicioSesion);
+//document.getElementById("btn__registrarse").addEventListener("click", registrarse);
+
+//declaracion variables validacion
+
+
+//funcion email
+function email(loginCorreo){
+    
+    if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(loginCorreo))
+            {
+            window.alert("La dirección de email " + loginCorreo + " es correcta!.");
+            window.alert("Ingreso al sistema");
+            return true;
+
+            } 
+            else 
+            {
+            alert("La dirección de email tien un formato incorrecta!.");
+            return false;
+            }
+}
+
+// funcion validar texto
+function valtexto(texto){
+    for (var i = 0; i < texto.length; i++) 
+    {
+            var charCode = texto.charCodeAt(i);
+            if (!((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122) )) {
+              alert("El campo usuario solo puede contener caracteres alfabéticos.");
+              return false;
+                }
+              
+
+              /*regex /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}$/*/
+          
+              
+    }
+
+}
+
+//funcion validar telefono
+function validartelefono(numero)
+{
+    let telefono = parseInt(numero);
+
+    if (Number.isInteger(telefono)){
+        window.alert("telefono aceptado");
+        return true
+    }
+    else{
+        window.alert ("el numero"+ numero + "no coincide con un valor valido de telefono")
+        return false
+        }
+
+
+}
+
+
+function validarcontraseña(contra1, contra2)
+{
+    let regex= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/ ;
+    if (contra1.length < 8 || contra2.length < 8)
+    {
+        window.alert("las contraseñas deben tner al menos 8 digitos");
+        return false;
+    }
+     
+    else (contra1 === contra2) 
+    {
+       window.alert("contra iguales");
+        if (regex.test(contra1)){
+        window.alert("contraseña aceptada e iguales")
+        return true;
+        }
+            else {
+            window.alert("las contraseñas coinciden, pero son debiles");
+        return false;
+        }
+        
+    }
+
+}
+
+//funciones validacion
+function inicioSesion(loginCorreo, loginContraseña)
+{
+    var loginCorreo = document.getElementById("loginCorreo").value.trim();
+    var loginContraseña = document.getElementById("loginContraseña").value.trim();
+    
+        if( loginCorreo ==='' || loginContraseña ==='')
+            {
+
+                window.alert('debe ingresar todos los campos solicitados');
+            return false;
+
+            }
+
+        // validar emal
+        email(loginCorreo);
+
+    /*regex /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}$/*/
+
+    
+    
+}
+
+    
+
+function registrarse(nombre, apellido, email, tel, contraseña, repContraseña){
+
+    var nombre= document.getElementById("reg-nombre").value.trim();
+    var apellido= document.getElementById("reg-apellido").value.trim();
+    var email= document.getElementById("reg-mail").value.trim();
+    var tel= document.getElementById("reg-tel").value.trim();
+    var contraseña= document.getElementById("reg-contraseña").value.trim();
+    var repContraseña= document.getElementById("reg-rep-contraseña").value.trim();
+
+//valida campos vacios
+    if( nombre ==='' || apellido ==='' || email ==='' || tel ==='' || contraseña ==='' || repContraseña ==='' )
+            {
+    
+            window.alert('debe ingresar todos los campos solicitados');
+                return false;
+        
+             }
+        
+    
+    
+    valtexto(nombre);
+    valtexto(apellido);
+    validartelefono(tel);
+    validarcontraseña(contraseña, repContraseña);      
+}
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+//Declarando variables movimiento de cajas
 var formulario_login = document.querySelector(".formulario__login");
 var formulario_register = document.querySelector(".formulario__register");
 var contenedor_login_register = document.querySelector(".contenedor__login-register");
@@ -38,7 +188,7 @@ function anchoPage(){
 anchoPage();
 
 
-    function iniciarSesion(){
+    function irIniciarSesion(){
         if (window.innerWidth > 1019){
             formulario_login.style.display = "block";
             contenedor_login_register.style.left = "10px";
@@ -55,7 +205,7 @@ anchoPage();
         }
     }
 
-    function register(){
+    function irRegistro(){
         if (window.innerWidth > 1019){
             formulario_register.style.display = "grid";
             contenedor_login_register.style.left = "410px";

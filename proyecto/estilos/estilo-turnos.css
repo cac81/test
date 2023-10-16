@@ -6,7 +6,13 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background: grey;
+    background-image: url(/proyecto/imagenes/contacto.jpg);
+    background-color: #585149;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        
+        background-attachment: fixed;
     
 }
 
@@ -28,15 +34,27 @@ label {
 select {
     margin-bottom: 10px;
     margin-top: 10px;
+    padding: 5px;
+    text-align: justify;
+    font-weight: 600;
+   border: 1px solid black;
+    border-radius: 5px;
+
   }
   .especialidades{
-    border: 2px solid red;
+    border: 2px solid rgb(211, 202, 247);
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 58%;
     align-items: center;
     padding: 10px;
     margin-top: 50px;
+  }
+  .lab-especialidades{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
   }
 
   .for-especialidad{
@@ -47,22 +65,72 @@ select {
 
   }
 
-  .for-profesionales{
-
-  }
-
+  
 
 
 
   .profesionales{
-    border:  2px solid blue;
+    border: 2px solid rgb(211, 202, 247);
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 58%;
     align-items: center;
     padding: 10px;
     margin: 50px;
   }
-  .fhturnos{
-    border:  2px solid black;
+  
+  .for-profesionales{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+.lab-profesionales{
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+  
+  
+  
+  
+  .turnosdisponibles{
+    border: 2px solid rgb(211, 202, 247);
+    width: 58%;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 50px;
+    /*display: none;*/
+  }
+  h3{
+    text-align: center;
+  }
+  .dias-disp{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+  }
+
+  .horario-1{
+    cursor: pointer;
+  }
+  .horario-1:hover{
+    background: blue;
+  }
+ 
+  .turno-dia{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .turno-horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
