@@ -85,23 +85,23 @@
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form action="" class="formulario__login">
+                    <form action="" class="formulario__login" onsubmit="inicioSesion()">
                         <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Correo Electronico" id="login-correo">
-                        <input type="password" placeholder="Contraseña" id="login-contraseña">
-                        <button>Entrar</button>
+                        <input type="text" placeholder="Correo Electronico"  name="loginCorreo" id="loginCorreo">
+                        <input type="password" placeholder="Contraseña" name="loginContraseña" id="loginContraseña">
+                        <button class="btn__entrar" id="btn__entrar" type="submit">Entrar</button>
                     </form>
 
                     <!--Register-->
-                    <form action="" class="formulario__register">
+                    <form action="" class="formulario__register" onsubmit="registrarse()">
                         <h2>Regístrarse</h2>
                         <input type="text" placeholder="Nombre" id="reg-nombre">
                         <input type="text" placeholder="Apellido" id="reg-apellido">
-                        <input type="text" placeholder="Correo Electronico" id="reg-mail">
-                        <input type="text" placeholder="telefono" id="reg-tel">
+                        <input type="email" placeholder="Correo Electronico" id="reg-mail">
+                        <input type="tel" placeholder="telefono" id="reg-tel">
                         <input type="password" placeholder="Contraseña" id="reg-contraseña">
                         <input type="password" placeholder="Repita su contraseña" id="reg-rep-contraseña">
-                        <button>Regístrarse</button>
+                        <button class="btn__registrarse" id="btn__registrarse">Regístrarse</button>
                     </form>
                 </div>
             </div>

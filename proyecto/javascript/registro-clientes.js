@@ -56,7 +56,7 @@ function validartelefono(numero)
         return true
     }
     else{
-        window.alert ("el numero"+ numero + "no coincide con un valor valido de telefono")
+        window.alert ("el numero  "+ numero + "  no coincide con un valor valido de telefono")
         return false
         }
 
