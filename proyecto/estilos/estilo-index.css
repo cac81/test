@@ -194,12 +194,11 @@ color: white;
     color: #2f3e47;
     text-align: center;
   }
-  .servicio-medico p{
+  .servicio-medico  p{
    
     color: #2f3e47;
     text-align: center;
-   padding-left: 45px;
-   padding-right: 45px;
+   
   }
   .servicio-medico ol, .servicio-medico ul{
     list-style: none;

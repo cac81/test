@@ -6,14 +6,16 @@
 .texto  {
     border: 2px solid #789dbd;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
+    
+    color: #2f3e47;
+  }
+  .texto0  {
     text-align: center;
     padding: 20px;
-   
+    color: #2f3e47;
   }
-  a.Boton {
-   padding-bottom: 30px; /* Ajusta el valor según tus necesidades */
-}
 .contenedora{
   text-align: center;
     text-indent: 50px;
@@ -21,6 +23,8 @@
     padding: 20px 20px;
     color: #2f3e47;
 }
+
+
 .imagenes{
   grid-area: aside;
   pad: 10px;
