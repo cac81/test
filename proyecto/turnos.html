@@ -56,35 +56,69 @@
     <div class="contenedor-turnos">    
        
         <h1>Turnos online</h1>
+
+        <div class="lugar">
+
+            
+            <form action="" class="for-lugar">
+                <label for="lugar-atencion" class="lab-lugares">Seleccione su obra social</label>
+                <select name="lugar-atencion" id="lugar-atencion" >
+                  <option value="caba">CABA</option>
+                  <option value="rosario">ROSARIO</option>
+                  <option value="cordoba">CORDOBA</option>
+                  
+                </select>
+               
+          </form>
+        </div>
+        
+        
+        <div class="obras">
+
+            
+            <form action="" class="for-obras">
+                <label for="obrassociales" class="lab-obras">Seleccione su obra social</label>
+                <select name="espe__name" id="obrassociales" >
+                  <option value="os1">Obra Social 1</option>
+                  <option value="os2">Obra Social 2</option>
+                  <option value="os3">Obra Social 3</option>
+                  <option value="os4">Obra Social 4</option>
+                  
+                </select>
+               
+          </form>
+        </div>
        
         <div class="especialidades">
 
             
             <form action="" class="for-especialidad">
                 <label for="especialidad" class="lab-especialidades">Seleccione la Especialidad</label>
-                <select name="espe__name" id="especialidad">
+                <select name="espe__name" id="especialidad" onchange="selEspecialidad(this);">
+                  <option value="" hidden selected>especialidades</option>
                   <option value="pediatria">Pediatria</option>
                   <option value="clinica">Clinica Medica</option>
                   <option value="cardiologia">Cardiologia</option>
                   <option value="ginecologia">Ginecologia</option>
-                  <option value="endocrinologia">Endocrinologia</option>
+                  <option value="dermatologia">Dermatologia</option>
                   <option value="traumatologia">Traumatologia</option>
                 </select>
                
           </form>
         </div>
           
-        <div class="profesionales">
+        <div class="profesionales" id="profesionales">
             <form action="" class="for-profesionales">
                 <label for="sel-prof" class="lab-profesionales">Seleccione el Profesional</label>
-                <select name="espe__name" id="sel-prof">
-                    <option value="ruiz-cecilia" class="pro-cardio" id="ruiz-cecilia">Dra. Ruiz Cecilia</option>
+                <select name="espe__name" id="sel-prof" onchange="mostrarHorarios();">
+                    <option value="" hidden selected>profesionales</option>
+                    <option value="ruiz-cecilia"  class="pro-cardio" id="ruiz-cecilia">Dra. Ruiz Cecilia</option>
                     <option value="ramirez-jorge" class="pro-cardio" id="ramirez-jorge">Dr. Ramirez Jorge</option>
                     <option value="herrera-mario" class="pro-cardio" id="herrera-mario">Dr. Herrera Mario</option>
                     <option value="rodriguez-mauricio" class="pro-cardio" id="rodriguez-mauricio">Dr. Rodriguez Mauricio</option>
                     <option value="gutierrez-alicia" class="pro-pedia" id="gutierrez-alicia">Dra. Gutierrez Alicia</option>
                     <option value="lopez-carlos" class="pro-pedia" id="lopez-carlos">Dr. Lopez Carlos</option>
-                    <option value="medina-mario" class="Pro-pedia" id="medina-mario">Dr. Medina Mario</option>
+                    <option value="medina-mario" class="pro-pedia" id="medina-mario">Dr. Medina Mario</option>
                     <option value="acosta-ana" class="pro-clinica" id="acosta-ana">Dra. Acosta Ana</option>
                     <option value="martinez-ana" class="pro-clinica" id="martinez-ana">Dra. Martinez Ana</option>
                     <option value="romero-valeria" class="pro-clinica" id="romero-valeria">Dra. Romero Valeria</option>
@@ -101,10 +135,10 @@
             </form>
           </div>
        
-          <div class="turnosdisponibles">
+          <div class="turnosdisponibles" id="horarios">
 
             <h3>Proximos turnos disponibles</h3>
-            <div class="dias-disp">
+            <div class="dias-disp" >
 
                 <div class="turno-dia">
                     <button>Lunes</button>

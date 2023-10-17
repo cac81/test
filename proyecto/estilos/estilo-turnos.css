@@ -41,7 +41,7 @@ select {
     border-radius: 5px;
 
   }
-  .especialidades{
+  .especialidades, .obras, .lugar{
     border: 2px solid rgb(211, 202, 247);
     border-radius: 15px;
     display: flex;
@@ -51,13 +51,13 @@ select {
     padding: 10px;
     margin-top: 50px;
   }
-  .lab-especialidades{
+  .lab-especialidades, .lab-lugares, .lab-obras{
     font-size: 20px;
     font-weight: 300;
     text-align: center;
   }
 
-  .for-especialidad{
+  .for-especialidad, .for-lugar, .for-obras{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -78,6 +78,7 @@ select {
     align-items: center;
     padding: 10px;
     margin: 50px;
+    display: none;
   }
   
   .for-profesionales{
@@ -102,7 +103,7 @@ select {
     border-radius: 15px;
     padding: 10px;
     margin-bottom: 50px;
-    /*display: none;*/
+    display: none;
   }
   h3{
     text-align: center;
