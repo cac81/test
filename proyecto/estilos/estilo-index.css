@@ -1,5 +1,5 @@
 *{
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.15;
     text-decoration-color: white;
 }
@@ -194,7 +194,17 @@ color: white;
     color: #2f3e47;
     text-align: center;
   }
-  
+  .servicio-medico p{
+   
+    color: #2f3e47;
+    text-align: center;
+   padding-left: 45px;
+   padding-right: 45px;
+  }
+  .servicio-medico ol, .servicio-medico ul{
+    list-style: none;
+    color: #2f3e47;
+  }
   .tabs{
     position: relative;
   }
@@ -225,8 +235,20 @@ color: white;
 
   #pnl_1, #pnl_2, #pnl_3, #pnl_4, #pnl_5, #pnl_6 {
     display: none;
-    padding: 30px;
+    padding: 40px;
+    
+    border: 2px solid rgb(211, 202, 247);;
+    border-radius: 15px;
+    margin: 20px auto;
   }
+
+  #pnl_1 img, #pnl_2 img, #pnl_3 img, #pnl_4 img, #pnl_5 img, #pnl_6 img{
+    display: block;
+    margin: 0 auto; 
+  max-width: 100%;
+  border-radius: 15px;
+  }
+  
   #uno:target ~ #pnl_1,
 #dos:target ~ #pnl_2,
 #tres:target ~ #pnl_3,
@@ -239,10 +261,10 @@ color: white;
     #pnl_1 > div, #pnl_2 > div, #pnl_3 > div #pnl_4 > div, #pnl_5 > div, #pnl_6 > div{
       opacity: 0;
       transition: all 0.1s ease;
-      padding: 30px;
+      padding: 20px;
       
     }
-  
+
   #uno:target ~ #pnl_1, #dos:target ~ #pnl_2, #tres:target ~ #pnl_3, #cuatro:target ~ #pnl_4, #cinco:target ~ #pnl_5, #seis:target ~ #pnl_6{
     position: static;
     /*border: 1px solid #ddd;*/
@@ -252,15 +274,17 @@ color: white;
       opacity: 1;
       transition: all 1s ease;
     }
+
+
     @media (max-width: 768px) {
-        #servicio {
+        .servicio {
           padding: 30px 20px;
         }
       }
       
       
       @media (max-width: 480px) {
-        #servicio {
+        .servicio {
           padding: 20px 10px;
         }
       }
