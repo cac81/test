@@ -11,6 +11,9 @@
     padding: 20px;
    
   }
+  a.Boton {
+   padding-bottom: 30px; /* Ajusta el valor según tus necesidades */
+}
 .contenedora{
   text-align: center;
     text-indent: 50px;
@@ -23,6 +26,7 @@
   pad: 10px;
   
 }
+
 
 .imagenes1, .imagenes2, .imagenes3{
   padding-top: 20px;
