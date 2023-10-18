@@ -69,7 +69,7 @@ function validarcontraseña(contra1, contra2)
     let regex= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/ ;
     if (contra1.length < 8 || contra2.length < 8)
     {
-        window.alert("las contraseñas deben tner al menos 8 digitos");
+        window.alert("las contraseñas deben tener al menos 8 digitos");
         return false;
     }
      

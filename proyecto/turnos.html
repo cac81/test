@@ -110,7 +110,7 @@
         <div class="profesionales" id="profesionales">
             <form action="" class="for-profesionales">
                 <label for="sel-prof" class="lab-profesionales">Seleccione el Profesional</label>
-                <select name="espe__name" id="sel-prof" onchange="mostrarHorarios();">
+                <select name="medico__name" id="sel-prof" onchange="mostrarHorarios(this);">
                     <option value="" hidden selected>profesionales</option>
                     <option value="ruiz-cecilia"  class="pro-cardio" id="ruiz-cecilia">Dra. Ruiz Cecilia</option>
                     <option value="ramirez-jorge" class="pro-cardio" id="ramirez-jorge">Dr. Ramirez Jorge</option>
@@ -143,30 +143,30 @@
                 <div class="turno-dia">
                     <button>Lunes</button>
                     <div class="turno-horarios">
-                        <button class="horario-1" id="horario-1" type="button">11:00 Hs</button>
-                        <button class="horario-1" id="horario-1" type="button">11:20 Hs</button>
-                        <button class="horario-1" id="horario-1" type="button">11:40 Hs</button>
-                        <button class="horario-1" id="horario-1" type="button">12:00 Hs</button>
+                        <button class="horario-1" id="horario-1" type="button" onclick="selTurno(this);">11:00 Hs</button>
+                        <button class="horario-1" id="horario-1" type="button" onclick="selTurno(this);">11:20 Hs</button>
+                        <button class="horario-1" id="horario-1" type="button" onclick="selTurno(this);">11:40 Hs</button>
+                        <button class="horario-1" id="horario-1" type="button" onclick="selTurno(this);">12:00 Hs</button>
                     </div>
                 </div>
 
                 <div class="turno-dia">
                     <button>Miercoles</button>
                     <div class="turno-horarios">
-                        <button class="horario-2" id="horario-2" type="button">15:00 Hs</button>
-                        <button class="horario-2" id="horario-2" type="button">15:40 Hs</button>
-                        <button class="horario-2" id="horario-2" type="button">16:20 Hs</button>
-                        <button class="horario-2" id="horario-2" type="button">16:40 Hs</button>
+                        <button class="horario-2" id="horario-2" type="button" onclick="selTurno(this);">15:00 Hs</button>
+                        <button class="horario-2" id="horario-2" type="button" onclick="selTurno(this);">15:40 Hs</button>
+                        <button class="horario-2" id="horario-2" type="button" onclick="selTurno(this);">16:20 Hs</button>
+                        <button class="horario-2" id="horario-2" type="button" onclick="selTurno(this);">16:40 Hs</button>
                     </div>
                 </div>
 
                 <div class="turno-dia">
                     <button>Viernes</button>
                     <div class="turno-horarios">
-                        <button class="horario-3" id="horario-3" type="button">11:40 Hs</button>
-                        <button class="horario-3" id="horario-3" type="button">12:40 Hs</button>
-                        <button class="horario-3" id="horario-3" type="button">13:00 Hs</button>
-                        <button class="horario-3" id="horario-3" type="button">14:20 Hs</button>
+                        <button class="horario-3" id="horario-3" type="button" onclick="selTurno(this);">11:40 Hs</button>
+                        <button class="horario-3" id="horario-3" type="button" onclick="selTurno(this);">12:40 Hs</button>
+                        <button class="horario-3" id="horario-3" type="button" onclick="selTurno(this);">13:00 Hs</button>
+                        <button class="horario-3" id="horario-3" type="button" onclick="selTurno(this);">14:20 Hs</button>
                     </div>
                 </div>
 

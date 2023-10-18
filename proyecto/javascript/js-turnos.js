@@ -1,6 +1,4 @@
-function selLugar(lugar){
-window.alert(" selecciono  "+ lugar.value);
-}
+var medico =""
 
 function ocultar(arreglo){
     
@@ -16,9 +14,12 @@ function mostrar(arreglo){
     }
 }
 
-function mostrarHorarios(){
+function mostrarHorarios(medicos){
     let horarios=document.getElementById("horarios");
     horarios.style.display='block';
+   
+    medico= medicos.value;
+
 }
 
 function selEspecialidad(espe){
@@ -108,6 +109,49 @@ switch (espe.value) {
         window.alert("error")
     
     
+    }
+
+
+}
+
+function selTurno(seleccion){
+
+    let leo = medico.split("-");
+    leo[0]=leo[0].toUpperCase();
+    leo[1]=leo[1].toUpperCase();
+    let dias =seleccion.id;
+    let dia="";
+    if(dias === "horario-1")
+    {
+        dia ="lunes";
+        
+    }
+        else {
+            if (dias === "horario-2")
+            {
+                dia="miercoles";
+                
+            }
+                else
+                {
+                    dia="viernes";
+                    
+                }
+            }
+        
+    
+
+    let confirmacion =confirm("Desea revervar el turno de las " +seleccion.textContent+ " para el dia "+ dia+" con el Dr./Dra "+leo[0] +" "+ leo[1] + " ?");
+    
+    if(confirmacion == true){
+        window.alert("Acaba de confirmar su turno, a la brevedad recibira un mail con los detalles");
+        let horarios=document.getElementById("horarios");
+        let profesionales = document.getElementById("profesionales");
+        profesionales.style.display='none';
+        horarios.style.display='none';
+    
+    
+        
     }
 
 
