@@ -149,7 +149,8 @@ color: white;
 }
 
 .enc__ingreso-li>a{
-    color: black
+    color: black;
+    font-weight: 600;
 }
 
 .enc__ingreso-li:hover{

@@ -81,7 +81,7 @@ ul {
 
 
 /* LARGE SIZE */
-@media(min-width: 700px) {
+@media screen and (min-width: 768px) {
   
     .contacto-ingreso-datos {
         display: grid;
@@ -91,4 +91,11 @@ ul {
         padding: 2em;
     }
     
+}
+@media screen and (max-width: 480px){
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+}
 }
