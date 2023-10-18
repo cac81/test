@@ -69,6 +69,7 @@
     color: #000;
     outline: none;
     transition: all 300ms;
+    border-radius: 15px;
 }
 
 .caja__trasera button:hover{
@@ -130,6 +131,7 @@
     cursor: pointer;
     color: white;
     outline: none;
+    border-radius: 15px;
 }
 
 .contenedor__login-register form button:hover{

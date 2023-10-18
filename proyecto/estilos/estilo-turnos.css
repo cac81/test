@@ -120,18 +120,46 @@ select {
 
   .horario-1, .horario-2, .horario-3{
     cursor: pointer;
+    background: #d9efed;
+    border-radius: 15px;
   }
   .horario-1:hover, .horario-2:hover, .horario-3:hover{
-    background: blue;
+    background: #00baad;
   }
  
   .turno-dia{
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    
+  }
+
+  .turno-dia > button{
+    
+    background: #577486;
+    border-radius: 15px;
   }
   .turno-horarios{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 768px){
+    .dias-disp{
+      display: block;
+    }
+    .turno-dia > button{
+      
+      margin: 10px 24% 10px 24%;
+      padding: 5px;
+      
+    }
   }

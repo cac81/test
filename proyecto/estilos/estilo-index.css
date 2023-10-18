@@ -147,7 +147,7 @@ color: white;
 .enc__ingreso-li{
     
     /*border: 1px solid black;*/
-    border-radius: 15%;
+    border-radius: 15px;
     display: block;
     text-align: center;
     width: 100%;
