@@ -63,10 +63,10 @@
             
             <form action="" class="for-lugar">
                 <label for="lugar-atencion" class="lab-lugares">Seleccione la sucursal donde desea atenderse</label>
-                <select name="lugar-atencion" id="lugar-atencion" >
-                  <option value="caba">CABA</option>
-                  <option value="rosario">ROSARIO</option>
-                  <option value="cordoba">CORDOBA</option>
+                <select name="lugar-atencion" id="lugar-atencion" onchange="selLugar(this);" >
+                  <option value="caba" id="caba">CABA</option>
+                  <option value="rosario" id="rosario">ROSARIO</option>
+                  <option value="cordoba" id="cordoba">CORDOBA</option>
                   
                 </select>
                
@@ -113,24 +113,58 @@
                 <label for="sel-prof" class="lab-profesionales">Seleccione el Profesional</label>
                 <select name="medico__name" id="sel-prof" onchange="mostrarHorarios(this);">
                     <option value="" hidden selected>profesionales</option>
-                    <option value="ruiz-cecilia"  class="pro-cardio" id="ruiz-cecilia">Dra. Ruiz Cecilia</option>
-                    <option value="ramirez-jorge" class="pro-cardio" id="ramirez-jorge">Dr. Ramirez Jorge</option>
-                    <option value="herrera-mario" class="pro-cardio" id="herrera-mario">Dr. Herrera Mario</option>
-                    <option value="rodriguez-mauricio" class="pro-cardio" id="rodriguez-mauricio">Dr. Rodriguez Mauricio</option>
-                    <option value="gutierrez-alicia" class="pro-pedia" id="gutierrez-alicia">Dra. Gutierrez Alicia</option>
-                    <option value="lopez-carlos" class="pro-pedia" id="lopez-carlos">Dr. Lopez Carlos</option>
-                    <option value="medina-mario" class="pro-pedia" id="medina-mario">Dr. Medina Mario</option>
-                    <option value="acosta-ana" class="pro-clinica" id="acosta-ana">Dra. Acosta Ana</option>
-                    <option value="martinez-ana" class="pro-clinica" id="martinez-ana">Dra. Martinez Ana</option>
-                    <option value="romero-valeria" class="pro-clinica" id="romero-valeria">Dra. Romero Valeria</option>
-                    <option value="perez-cintia" class="pro-gine" id="perez-cintia">Dra. Perez Cintia</option>
-                    <option value="gomez-graciela" class="pro-gine" id="gomez-graciela">Dra. Gomez Graciela</option>
-                    <option value="florez-martin" class="pro-trauma" id="florez-martin">Dr. Florez Martin</option>
-                    <option value="gimenez-martin" class="pro-trauma" id="gimenez-martin">Dr. Gimenez Martin</option>
-                    <option value="gonzalez-victor" class="pro-trauma" id="gonzalez-victor">Dr. Gonzalez Victor</option>
-                    <option value="diaz-jorge" class="pro-derma" id="diaz-jorge">Dr. Diaz Jorge</option>
-                    <option value="sanchez-jose" class="pro-derma" id="sanchez-jose">Dr. Sanchez Jose</option>
-                    <option value="flores-ramon" class="pro-derma" id="flores-ramon">Dr. Flores Ramon</option>
+                    <option value="ruiz-cecilia-rosario"  class="pro-cardio" id="ruiz-cecilia">Dra. Ruiz Cecilia</option>
+                    <option value="ramirez-jorge-caba" class="pro-cardio" id="ramirez-jorge">Dr. Ramirez Jorge</option>
+                    <option value="herrera-mario-cordoba" class="pro-cardio" id="herrera-mario">Dr. Herrera Mario</option>
+                    <option value="rodriguez-mauricio rosario" class="pro-cardio" id="rodriguez-mauricio">Dr. Rodriguez Mauricio</option>
+                    <option value="iglesias-maria-caba" class="pro-cardio" id="iglesias-maria">Dra. Iglesias Maria</option>
+                    <option value="millares-mariana-cordoba" class="pro-cardio" id="millares-mariana">Dra.Millares Mariana</option>
+                    <option value="rosa-juan-rosario" class="pro-cardio" id="rosa-juan">Dr. Rosa Juan</option>
+                    <option value="rivero-rosa-caba" class="pro-cardio" id="rivero-rosa">Dra Rvero Rosa</option>
+                    <option value="barreiro-carlos-cordoba" class="pro-cardio" id="barreiro-carlos">Dr. Barreiro Carlos</option>
+                    
+                    <option value="quiros-nicolas-rosario" class="pro-pedia" id="quiros-nicolas">Dr. Quiros Nicolas</option>
+                    <option value="gutierrez-alicia-rosario" class="pro-pedia" id="gutierrez-alicia">Dra. Gutierrez Alicia</option>
+                    <option value="lopez-carlos-caba" class="pro-pedia" id="lopez-carlos">Dr. Lopez Carlos</option>
+                    <option value="medina-mario-cordoba" class="pro-pedia" id="medina-mario">Dr. Medina Mario</option>
+                    <option value="puerta-francisco-rosario" class="pro-pedia" id="puerta-francisco">Dr. Puerta Francisco</option>
+                    <option value="soria-evangelina-caba" class="pro-pedia" id="soria-evangelina">Dra. Soria Evangelina</option>
+                    <option value="baeza-rebeca-cordoba" class="pro-pedia" id="baeza-rebeca">Dra. Baeza Rebeca</option>
+
+                    <option value="acosta-ana-rosario" class="pro-clinica" id="acosta-ana">Dra. Acosta Ana</option>
+                    <option value="martinez-ana-caba" class="pro-clinica" id="martinez-ana">Dra. Martinez Ana</option>
+                    <option value="romero-valeria-cordoba" class="pro-clinica" id="romero-valeria">Dra. Romero Valeria</option>
+                    <option value="vilches-antonio-rosario" class="pro-clinica" id="vilches-antonio">Dr. Vilches Antonio</option>
+                    <option value="callejeros-noah-caba" class="pro-clinica" id="callejeros-noah">Dr. Callejeros Noah</option>
+                    <option value="coronado-tania-cordoba" class="pro-clinica" id="coronado-tania">Dra. Coronado Tania</option>
+                    <option value="alfonso-marino-rosario" class="pro-clinica" id="alfonso-marino">Dr. Alfonso Marino</option>
+                    <option value="pastor-cesar-caba" class="pro-clinica" id="pastor-cesar">Dr. Pastor Cesar</option>
+                    <option value="rodas-esteban-cordoba" class="pro-clinica" id="rodas-esteban">Dr. Rodas Esteban</option>
+
+                    <option value="perez-cintia-rosario" class="pro-gine" id="perez-cintia">Dra. Perez Cintia</option>
+                    <option value="gomez-graciela-caba" class="pro-gine" id="gomez-graciela">Dra. Gomez Graciela</option>
+                    <option value="mira-maria-cordoba" class="pro-gine" id="mira-maria">Dra. Mira Maria</option>
+                    <option value="calleja-azucena-rosario" class="pro-gine" id="calleja-azucena">Dra. Calleja Azucena</option>
+                    <option value="villera-beatriz-caba" class="pro-gine" id="villera-beatriz">Dra. Villera Beatriz</option>
+                    <option value="lucas-pilar-cordoba" class="pro-gine" id="lucas-pilar">Dra. Lucas Pilar</option>
+                    <option value="rosado-noel-rosario" class="pro-gine" id="rosado-noel">Dr. Rosado Noel</option>
+                                       
+                    <option value="florez-martin-rosario" class="pro-trauma" id="florez-martin">Dr. Florez Martin</option>
+                    <option value="gimenez-martin-caba" class="pro-trauma" id="gimenez-martin">Dr. Gimenez Martin</option>
+                    <option value="gonzalez-victor-cordoba" class="pro-trauma" id="gonzalez-victor">Dr. Gonzalez Victor</option>
+                    <option value="alvaro-paul-rosario" class="pro-trauma" id="alvaro-paul">Dr. Alvaro Paul</option>
+                    <option value="saenz-alan-caba" class="pro-trauma" id="saenz-alan">Dr. Saenz Alan</option>
+                    <option value="andreu-isabel-cordoba" class="pro-trauma" id="andreu-isabel">Dra. Andreu Isabel</option>
+                    <option value="castillos-amanda-rosario" class="pro-trauma" id="castillos-amanda">Dr. Castillos Amanda</option>
+                    
+                    <option value="diaz-jorge-rosario" class="pro-derma" id="diaz-jorge">Dr. Diaz Jorge</option>
+                    <option value="sanchez-jose-caba" class="pro-derma" id="sanchez-jose">Dr. Sanchez Jose</option>
+                    <option value="flores-ramon-cordoba" class="pro-derma" id="flores-ramon">Dr. Flores Ramon</option>
+                    <option value="guerra-mercedes-rosario" class="pro-derma" id="guerra-mercedes">Dr. Guerra Mercedes</option>
+                    <option value="catalan-eva-caba" class="pro-derma" id="catalan-eva">Dra. Catalan Eva</option>
+                    <option value="uriarte-alexis-cordoba" class="pro-derma" id="uriarte-alexis">Dr. Uriarte Alexis</option>
+                    <option value="cruz-maria-rosario" class="pro-derma" id="cruz-maria">Dr. Cruz Maria</option>
+                    <option value="menendez-vanesa-caba" class="pro-derma" id="menendez-vanesa">Dr. Menendez Vanesa</option>
                 </select>
                 
             </form>

@@ -81,8 +81,11 @@ ul {
 
 
 /* LARGE SIZE */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   
+    .contenedor-contacto{
+        margin-top: 150px;
+    }
     .contacto-ingreso-datos {
         display: grid;
         

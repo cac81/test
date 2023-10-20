@@ -178,12 +178,15 @@ color: white;
     display: grid;
     
     
+    
   }
   .servicio-medico h1{
    
     color: #2f3e47;
     text-align: center;
+
   }
+
   .estudios{
     margin: auto;
   }
@@ -192,7 +195,7 @@ color: white;
    
     color: #2f3e47;
     text-align: justify;
-    margin: 0 10px 0 10px;
+    padding: 0 10px;
    
   }
   .servicio-medico ol, .servicio-medico ul{
@@ -201,9 +204,37 @@ color: white;
   }
   .tabs{
     position: relative;
-    display: inline-block;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap:10px ;
+  
+    align-content: center;
+    justify-content: center;
   }
+
+  .tab-clinica{
+    grid-column: 1;
+    font-size: 15px;
+    
+  }
+  .tab-pediatria{
+    grid-column: 2;
+    font-size: 15px;  
+}
+  .tab-gineco{
+    grid-column: 3;
+    font-size: 15px;
+  }
+  .tab-cardio{
+    grid-column: 4;
+    font-size: 15px;}
+  .tab-trauma{
+    grid-column: 5;
+    font-size: 15px;}
+  .tab-derma{
+    grid-column: 6;
+    font-size: 15px;}
+
   
   span.diana {
     position: fixed;
@@ -211,18 +242,16 @@ color: white;
     }
   
   .diana + a {
-    display: inline-block;
-    text-align: center;
-   /* display: block;
-    float: left;*/
+    display: block;
+    
     height: 32px;
     line-height: 32px;
-    padding: 0 10px;
+    text-align: center;
     border: 2px solid #90a9b0;
     background-color: #90a9b0;
     margin-bottom: -1px;
     border-radius: 8px 8px 0 0;
-    margin-right: 10px;
+    
     text-decoration:none;
   }
   
@@ -234,9 +263,11 @@ color: white;
   #pnl_1, #pnl_2, #pnl_3, #pnl_4, #pnl_5, #pnl_6 {
     display: none;
     padding: 20px;
+    grid-column: 1/7; 
+    grid-row: 2; 
     border: 2px solid #90a9b0;
     border-radius: 10px;
-    
+    margin: 20px auto;
   }
 
   #pnl_1 img, #pnl_2 img, #pnl_3 img, #pnl_4 img, #pnl_5 img, #pnl_6 img{
@@ -244,8 +275,8 @@ color: white;
     margin: 0 auto; 
   max-width: 100%;
   border-radius: 15px;
-  padding-bottom: 15px;
   }
+  
   #pnl_1 .estudios, #pnl_2 .estudios, #pnl_3 .estudios, #pnl_4 .estudios, #pnl_5 .estudios, #pnl_6 .estudios {
     margin-left: 60px;
     text-align: left; /* Ajusta el texto a la izquierda */
@@ -254,31 +285,6 @@ color: white;
     margin-left: 70px;
     text-align: left; 
   }
-  #uno:target ~ #pnl_1,
-#dos:target ~ #pnl_2,
-#tres:target ~ #pnl_3,
-#cuatro:target ~ #pnl_4,
-#cinco:target ~ #pnl_5,
-#seis:target ~ #pnl_6 {
-  display: block;
-}
-  
-    #pnl_1 > div, #pnl_2 > div, #pnl_3 > div #pnl_4 > div, #pnl_5 > div, #pnl_6 > div{
-      opacity: 0;
-      transition: all 0.1s ease;
-      padding: 20px;
-      
-    }
-
-  #uno:target ~ #pnl_1, #dos:target ~ #pnl_2, #tres:target ~ #pnl_3, #cuatro:target ~ #pnl_4, #cinco:target ~ #pnl_5, #seis:target ~ #pnl_6{
-    position: static;
-    /*border: 1px solid #ddd;*/
-  }
-  
-    #uno:target ~ #pnl_1 > div, #dos:target ~ #pnl_2 > div, #tres:target ~ #pnl_3 > div, #cuatro:target ~ #pnl_4 > div, #cinco:target ~ #pnl_5 > div, #seis:target ~ #pnl_6 > div{
-      opacity: 1;
-      transition: all 1s ease;
-    }
 
 
 
@@ -509,7 +515,7 @@ border-radius: 8px;
 .footer{
     grid-area: footer;
     display: flex;
-    height: 50px;
+    
    
 }
 
@@ -680,6 +686,9 @@ flex-direction: column;
         
         grid-template-columns:repeat(12, 1fr);
         height: 150px;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
     }
     .enc__menu{
 
@@ -774,7 +783,52 @@ flex-direction: column;
         padding: 30px 20px;
       }
 
-    
+      .servicio-medico{
+        margin-top: 150px;
+      }
+
+
+      .tabs{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap:10px ;
+        width: 100%;
+        grid-row-gap: 10px;
+        align-content: center;
+        justify-content: center;
+      }
+      .tab-clinica{
+        grid-column: 1;
+        font-size: 15px;
+        
+      }
+      .tab-pediatria{
+        grid-column: 2;
+        font-size: 15px;  
+    }
+      .tab-gineco{
+        grid-column: 3;
+        font-size: 15px;
+      }
+      .tab-cardio{
+        grid-row: 2;
+        grid-column: 1;
+        font-size: 15px;}
+      .tab-trauma{
+        grid-row: 2;
+        grid-column: 2;
+        font-size: 15px;}
+      .tab-derma{
+        grid-row: 2;
+        grid-column: 3;
+        font-size: 15px;}
+        #pnl_1, #pnl_2, #pnl_3, #pnl_4, #pnl_5, #pnl_6 {
+            grid-row: 3;
+            grid-column: 1/4;
+        }
+
+   
     
 
 
@@ -885,9 +939,10 @@ flex-direction: column;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas: "tex tex tex tex tex tex tex tex tex tex tex tex"
-                            " tel tel tel tel tel tel tel tel tel tel tel tel" 
+                            
                             "what what what what  what what what what  what what what what" 
                             "onl onl onl onl onl onl onl onl onl onl onl onl"
+                            " tel tel tel tel tel tel tel tel tel tel tel tel" 
                             ;
         
     
@@ -1034,6 +1089,40 @@ flex-direction: column;
     .servicio {
         padding: 20px 10px;
       }
+
+      .tab-clinica{
+        grid-column: 1;
+        font-size: 12px;
+        
+      }
+      .tab-pediatria{
+        grid-column: 2;
+        font-size: 12px;  
+    }
+      .tab-gineco{
+        grid-column: 3;
+        font-size: 12px;
+      }
+      .tab-cardio{
+        grid-row: 2;
+        grid-column: 1;
+        font-size: 12px;}
+      .tab-trauma{
+        grid-row: 2;
+        grid-column: 2;
+        font-size: 12px;}
+      .tab-derma{
+        grid-row: 2;
+        grid-column: 3;
+        font-size: 12px;}
+
+
+        #pnl_1, #pnl_2, #pnl_3, #pnl_4, #pnl_5, #pnl_6 {
+            
+            padding: 20px;
+           
+          }
+        
 
 .footer{
     display: flex;

@@ -1,4 +1,5 @@
-var medico =""
+var medico ="";
+var filtrarLugar="";
 
 function ocultar(arreglo){
     
@@ -10,9 +11,36 @@ function ocultar(arreglo){
 function mostrar(arreglo){
     for (let i = 0; i < arreglo.length; i++)
     {
+        let leo = filtrarLugar;
+      
+        let arVal = arreglo[i].value.split("-");
+        let val=arVal[2]
+        
+        if (leo === val){
         arreglo[i].style.display= 'block';
+        }else{arreglo[i].style.display= 'none';}
+        if (leo === val){
+            arreglo[i].style.display= 'block'; 
+        } else{arreglo[i].style.display= 'none';
+            
+        }
+        if (leo === val){
+            arreglo[i].style.display= 'block';
+        }else{
+            arreglo[i].style.display= 'none';
+        }
+        
+        
+
+        
+        
     }
 }
+
+
+
+
+
 
 function mostrarHorarios(medicos){
     let horarios=document.getElementById("horarios");
@@ -153,6 +181,19 @@ function selTurno(seleccion){
     
         
     }
+
+
+}
+
+ function selLugar(lugar)
+{
+
+    filtrarLugar = lugar.value;
+
+
+
+   
+
 
 
 }

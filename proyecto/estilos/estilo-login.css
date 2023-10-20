@@ -4,6 +4,7 @@
     margin-right: auto;
     padding: 1.5em;
     grid-area: aside;
+    margin-top: 150PX;
 }
 
 ul {
@@ -84,8 +85,12 @@ ul {
 
 
 /* LARGE SIZE */
-@media(min-width: 700px) {
+@media(min-width: 768px) {
   
+.contenedor-login{
+    margin-top: 0px;
+}
+
     .login-ingreso-datos {
         display: grid;
         

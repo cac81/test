@@ -126,3 +126,12 @@
   border: none;
 
 }
+
+
+
+
+@media screen and (max-width: 768px){
+.grilla-medicos{
+margin-top: 150px;
+}
+}

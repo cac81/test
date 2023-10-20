@@ -6,8 +6,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-image: url(/proyecto/imagenes/contacto.jpg);
-    background-color: #585149;
+    /*background-image: url(/proyecto/imagenes/contacto.jpg);*/
+    background-color: #d9efed;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -153,6 +153,13 @@ select {
 
 
   @media screen and (max-width: 768px){
+    
+    
+    .contenedor-turnos{
+      margin-top: 150px;
+    }
+    
+    
     .dias-disp{
       display: block;
     }
