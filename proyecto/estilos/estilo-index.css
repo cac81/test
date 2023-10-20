@@ -197,6 +197,8 @@ color: white;
   }
   .tabs{
     position: relative;
+    display: inline-block;
+    text-align: center;
   }
   
   span.diana {
@@ -205,8 +207,10 @@ color: white;
     }
   
   .diana + a {
-    display: block;
-    float: left;
+    display: inline-block;
+    text-align: center;
+   /* display: block;
+    float: left;*/
     height: 32px;
     line-height: 32px;
     padding: 0 10px;
