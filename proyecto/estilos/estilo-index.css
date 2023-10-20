@@ -184,6 +184,10 @@ color: white;
     color: #2f3e47;
     text-align: center;
   }
+  .estudios{
+    margin: auto;
+  }
+
   .servicio-medico  p{
    
     color: #2f3e47;
@@ -214,8 +218,8 @@ color: white;
     height: 32px;
     line-height: 32px;
     padding: 0 10px;
-   
-    background-color: #b8d8d7;
+    border: 2px solid #90a9b0;
+    background-color: #90a9b0;
     margin-bottom: -1px;
     border-radius: 8px 8px 0 0;
     margin-right: 10px;
@@ -229,11 +233,10 @@ color: white;
 
   #pnl_1, #pnl_2, #pnl_3, #pnl_4, #pnl_5, #pnl_6 {
     display: none;
-    padding: 40px;
+    padding: 20px;
+    border: 2px solid #90a9b0;
+    border-radius: 10px;
     
-    border: 2px solid rgb(211, 202, 247);;
-    border-radius: 15px;
-    margin: 20px auto;
   }
 
   #pnl_1 img, #pnl_2 img, #pnl_3 img, #pnl_4 img, #pnl_5 img, #pnl_6 img{
@@ -241,8 +244,16 @@ color: white;
     margin: 0 auto; 
   max-width: 100%;
   border-radius: 15px;
+  padding-bottom: 15px;
   }
-  
+  #pnl_1 .estudios, #pnl_2 .estudios, #pnl_3 .estudios, #pnl_4 .estudios, #pnl_5 .estudios, #pnl_6 .estudios {
+    margin-left: 60px;
+    text-align: left; /* Ajusta el texto a la izquierda */
+  }
+  #pnl_1 .estudios-lista, #pnl_2 .estudios-lista, #pnl_3 .estudios-lista, #pnl_4 .estudios-lista, #pnl_5 .estudios-lista, #pnl_6 .estudios-lista {
+    margin-left: 70px;
+    text-align: left; 
+  }
   #uno:target ~ #pnl_1,
 #dos:target ~ #pnl_2,
 #tres:target ~ #pnl_3,
