@@ -68,7 +68,7 @@
     transition: .5s ease;
   }
   .polaroid:hover .overlay {
-    height: 75%;
+    height: 60%;
   }
   .polaroid {
     position: relative;
@@ -81,7 +81,7 @@
     height: auto;
   }
   .text-p {
-    font-size: 14px;
+    font-size: 15px;
   }
   
 .section {
@@ -120,7 +120,7 @@
 .Boton {
   background-color: #577486;
   color: white;
-  padding: 15px 25px;
+  padding: 5px 5px;
   text-decoration: none;
   cursor: pointer;
   border: none;
