@@ -6,14 +6,14 @@
 .texto  {
     border: 2px solid #789dbd;
     border-radius: 20px;
-    padding: 20px;
+    padding: 35px;
     text-align: center;
     
     color: #2f3e47;
   }
   .texto0  {
     text-align: center;
-    padding: 20px;
+  
     color: #2f3e47;
   }
 .contenedora{
@@ -27,7 +27,7 @@
 
 .imagenes{
   grid-area: aside;
-  pad: 10px;
+  padding: 20px 20px;
   
 }
 
@@ -39,23 +39,32 @@
 
 .img1 {
   float: right;
-  width: 200px;
+  width: 350px;
   height: auto;
   object-fit: cover;
   border-radius: 20px
 }
 .img2 {
   float: left;
-  width: 200px;
+  width: 300px;
   height: auto;
   object-fit: cover;
   border-radius: 20px
 }
 .img3 {
   float: right;
-  width: 200px;
+  width: 300px;
   height: auto;
   object-fit: cover;
   border-radius: 20px
 }
 
+@media (max-width: 768px) {
+  .imagenes {
+    grid-template-columns: 1fr;
+  }
+  .img1, .img2, .img3 {
+    float: none;
+    width: 100%;
+  }
+}
