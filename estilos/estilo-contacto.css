@@ -1,0 +1,104 @@
+.contenedor-contacto {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    grid-area: aside;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3em;
+}
+
+
+
+.contacto-ingreso-datos {
+    box-shadow: 0 0 20px 0 rgba(12, 0, 0, 0.993);
+    border-radius: 5%;
+    
+}
+
+.contacto-ingreso-datos > * {
+    padding: 1em;
+}
+
+.formulario-contacto{
+    background: #d9efed;
+    border-radius: 5%;
+}
+
+.formulario-contacto form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario-contacto form label {
+    display: block;
+}
+
+.formulario-contacto form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.formulario-contacto form .mensaje {
+    grid-column: 1 / 3;
+}
+
+.formulario-contacto form button,
+.formulario-contacto form input,
+.formulario-contacto form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #000;
+    border-bottom: 1px solid #577486;
+    font-size: 1em;
+}
+.formulario-contacto form button {
+    background: #00baad;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.formulario-contacto form button:hover,
+.formulario-contacto form button:focus {
+    background: #577486;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+
+
+/* LARGE SIZE */
+@media screen and (max-width: 768px) {
+  
+    .contenedor-contacto{
+        margin-top: 150px;
+    }
+    .contacto-ingreso-datos {
+        display: grid;
+        
+    }
+    .contacto-ingreso-datos > * {
+        padding: 2em;
+    }
+    
+}
+@media screen and (max-width: 480px){
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+}
