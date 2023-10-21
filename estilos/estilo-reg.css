@@ -235,3 +235,10 @@
         }
        
     }
+
+    @media screen and (max-width: 768px) and (orientation:landscape){
+
+        .contenedor__todo {
+            margin-top: 75px;
+          }
+    }

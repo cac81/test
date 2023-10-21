@@ -69,7 +69,7 @@
  
   .imagenes {
     grid-template-columns: 1fr;
-    margin-top: 150px;
+    top: 150px;
   }
 
 

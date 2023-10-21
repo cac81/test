@@ -84,7 +84,8 @@ ul {
 @media screen and (max-width: 768px) {
   
     .contenedor-contacto{
-        margin-top: 150px;
+        top: 150px;
+        position: relative;
     }
     .contacto-ingreso-datos {
         display: grid;
@@ -101,4 +102,16 @@ ul {
     display: flex;
     flex-direction: column;
 }
+
+
+
+
+
+
+}
+@media screen and (max-width: 768px) and (orientation:landscape){
+
+    .contenedor-contacto {
+        top: 75px;
+      }
 }
