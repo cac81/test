@@ -64,10 +64,6 @@
  
  
  
-  .imagenes1, .imagenes2, .imagenes3 {
-    grid-template-columns: 1fr;
-    
-  }
 
 
   .img1, .img2, .img3 {
