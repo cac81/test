@@ -84,8 +84,7 @@ ul {
 @media screen and (max-width: 768px) {
   
     .contenedor-contacto{
-        top: 150px;
-        position: relative;
+       margin-top: 150px;
     }
     .contacto-ingreso-datos {
         display: grid;

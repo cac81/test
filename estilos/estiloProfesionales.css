@@ -132,8 +132,7 @@
 
 @media screen and (max-width: 768px){
 .grilla-medicos{
-  position: relative;
-  top: 150px;
+  margin-top: 150px;
 }
 }
 
