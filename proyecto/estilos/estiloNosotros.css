@@ -26,8 +26,9 @@
 
 
 .imagenes{
-  display: grid;
+  
   grid-area: aside;
+  display: grid;
   padding: 20px 20px;
   
 }
@@ -59,22 +60,11 @@
   object-fit: cover;
   border-radius: 20px
 }
-/*
-@media s (max-width: 480px) {
- 
- 
- 
 
+@media screen and (max-width: 768px){
 
   .img1, .img2, .img3 {
     float: none;
     width: 50%;
   }
-  
 }
-*/
-@media screen and (max-width: 768px){
-  .imagenes{
-  margin-top: 150px;
-  }
-  }
