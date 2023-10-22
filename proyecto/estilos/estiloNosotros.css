@@ -40,21 +40,21 @@
 }
 
 .img1 {
-  float: right;
+  /*float: right;*/
   width: 350px;
   height: auto;
   object-fit: cover;
   border-radius: 20px
 }
 .img2 {
-  float: left;
+  /*float: left;*/
   width: 300px;
   height: auto;
   object-fit: cover;
   border-radius: 20px
 }
 .img3 {
-  float: right;
+ /* float: right;*/
   width: 300px;
   height: auto;
   object-fit: cover;
@@ -67,7 +67,7 @@
     margin-top: 20px; 
   }
   .img1, .img2, .img3 {
-    float: none;
+  /*  float: none;*/
     max-width: 100%;
   }
 }
