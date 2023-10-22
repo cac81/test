@@ -58,26 +58,23 @@
   object-fit: cover;
   border-radius: 20px
 }
-
+/*
 @media (max-width: 768px) {
  
- .imagenes1, .imagenes2, .imagenes3 {
-    padding: 20px;
-  }
-  
  
  
  
  
- /*
+ 
+ 
   .imagenes {
     grid-template-columns: 1fr;
     margin-top: 150px;
   }
-*/
+
 
   .img1, .img2, .img3 {
     float: none;
     width: 100%;
   }
-}
+}*/
