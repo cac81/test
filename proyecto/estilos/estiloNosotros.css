@@ -59,8 +59,8 @@
   object-fit: cover;
   border-radius: 20px
 }
-
-@media (max-width: 480px) {
+/*
+@media s (max-width: 480px) {
  
  
  
@@ -70,4 +70,11 @@
     float: none;
     width: 50%;
   }
+  
 }
+*/
+@media screen and (max-width: 768px){
+  .imagenes{
+  margin-top: 150px;
+  }
+  }
