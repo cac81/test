@@ -1,6 +1,7 @@
 //llamada a funciones movimiento de cajas
 document.getElementById("btn__iniciar-sesion").addEventListener("click", irIniciarSesion);
 document.getElementById("btn__irRegistrarse").addEventListener("click", irRegistro);
+//var anchopagina = window.innerWidth;
 window.addEventListener("resize", anchoPage);
 
 
@@ -163,7 +164,7 @@ var caja_trasera_register = document.querySelector(".caja__trasera-register");
     //FUNCIONES
 
 function anchoPage(){
-
+    //if (anchopagina !== window.innerWidth){
     if (window.innerWidth > 1019){
         
         if(contenedor_login_register.style.left == "410px"){
@@ -183,6 +184,7 @@ function anchoPage(){
         formulario_register.style.display = "none";  
         
     }
+    //}
 }
 
 anchoPage();
