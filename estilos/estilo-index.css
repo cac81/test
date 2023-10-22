@@ -1137,6 +1137,10 @@ flex-direction: column;
 .footer__google p{
     font-size: 15px;
 }
+
+.mapa1 > p, .mapa2 > p, .mapa > p{
+    height: 40%;
+}
 }
 
 
@@ -1149,12 +1153,14 @@ flex-direction: column;
     .enc__home img{
         max-height: 65px;
     }
-    .servicio-medico {
-        margin-top: 75px;
-      }
+    
       .check__menu:checked ~ ul{
         top: 75px;
       }
+
+      .servicio-medico {
+        margin-top: 75px;
+      }  
 }
 
 
