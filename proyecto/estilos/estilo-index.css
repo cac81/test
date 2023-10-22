@@ -235,7 +235,6 @@ color: white;
     grid-column: 6;
     font-size: 15px;}
 
-  
   span.diana {
     position: fixed;
     display: none;
@@ -259,7 +258,14 @@ color: white;
     background-color: #fff;
     border-bottom-color: #fff; 
   }
-
+  .tabs {
+  margin: 0;
+  padding: 0;
+}
+  .tab-e {
+    margin: 0;
+    padding: 0;
+  }
   #pnl_1, #pnl_2, #pnl_3, #pnl_4, #pnl_5, #pnl_6 {
     display: none;
     padding: 20px;
@@ -267,7 +273,7 @@ color: white;
     grid-row: 2; 
     border: 2px solid #90a9b0;
     border-radius: 10px;
-    margin: 20px auto;
+    margin:  auto;
   }
 
   #pnl_1 img, #pnl_2 img, #pnl_3 img, #pnl_4 img, #pnl_5 img, #pnl_6 img{
