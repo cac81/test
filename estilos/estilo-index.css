@@ -211,7 +211,18 @@ color: white;
     align-content: center;
     justify-content: center;
   }
-
+  .tabs a {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  .tabs a:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  }
+  .tabs a:active {
+  background-color: #b1c4ca; 
+  color: white; 
+}
   .tab-clinica{
     grid-column: 1;
     font-size: 15px;
