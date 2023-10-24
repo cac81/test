@@ -211,18 +211,7 @@ color: white;
     align-content: center;
     justify-content: center;
   }
-  .tabs a {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    text-decoration: none;
-  }
-  .tabs a:hover {
-    transform: scale(1.1); 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-  }
-  .tabs a:active {
-  background-color: #b1c4ca; 
-  color: white; 
-}
+
   .tab-clinica{
     grid-column: 1;
     font-size: 15px;
@@ -260,12 +249,16 @@ color: white;
     text-align: center;
     border: 2px solid #90a9b0;
     background-color: #90a9b0;
-    margin-bottom: 0px;
-    border-radius: 5px ;
+    margin-bottom: -1px;
+    border-radius: 8px 8px 0 0;
     
     text-decoration:none;
   }
   
+#btn-1{
+    min-width: max-content;
+}
+
   .diana:target + a {
     background-color: #fff;
     border-bottom-color: #fff; 
@@ -277,8 +270,8 @@ color: white;
     grid-column: 1/7; 
     grid-row: 2; 
     border: 2px solid #90a9b0;
-    border-radius: 5px;
-    margin: auto;
+    border-radius: 10px;
+    margin: 20px auto;
   }
 
   #pnl_1 img, #pnl_2 img, #pnl_3 img, #pnl_4 img, #pnl_5 img, #pnl_6 img{
@@ -286,7 +279,6 @@ color: white;
     margin: 0 auto; 
   max-width: 100%;
   border-radius: 15px;
-  opacity: 1;
   }
   
   #pnl_1 .estudios, #pnl_2 .estudios, #pnl_3 .estudios, #pnl_4 .estudios, #pnl_5 .estudios, #pnl_6 .estudios {
@@ -377,14 +369,14 @@ text-decoration: bl;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr;
     grid-template-areas: "tex tex tex tex tex tex tex tex tex tex tex tex"
                         "tel tel tel tel what what what what onl onl onl onl"
                         "serv serv serv serv serv serv serv serv serv serv serv serv";
 
     background-color: #d9efed ;
-    background-repeat: no-repeat;
-    background-size:100% 100%;
+   
+    padding-bottom: 20px;
     
     }
 
@@ -469,7 +461,8 @@ align-items: center;
 }
 
 .what > a:hover{
-    border-bottom: 5px solid #93c5c6;
+    /*border-bottom: 1px solid #93c5c6;*/
+    background-color: #577486;
 }
 
 .what > .txt{
@@ -508,7 +501,8 @@ border-radius: 8px;
 }
 
 .online > a:hover{
-    border-bottom: 5px solid #93c5c6;
+    /*border-bottom: 5px solid #93c5c6;*/
+    background-color: #577486;
 }
 
 
@@ -840,10 +834,7 @@ flex-direction: column;
             grid-column: 1/4;
         }
 
-        #pnl_1 .estudios-lista, #pnl_2 .estudios-lista, #pnl_3 .estudios-lista, #pnl_4 .estudios-lista, #pnl_5 .estudios-lista, #pnl_6 .estudios-lista {
-            margin-left: 60px;
-            text-align: left; 
-          }
+   
     
 
 
@@ -1089,6 +1080,17 @@ flex-direction: column;
 
 
 
+
+
+
+
+
+/* medi@query medi@query medi@query medi@query medi@query medi@query
+medi@query medi@query medi@query medi@query medi@query medi@query 
+*/
+
+
+
 @media screen and (max-width: 480px){
 
     .enc__ingreso-li>a{
@@ -1158,6 +1160,19 @@ flex-direction: column;
 }
 }
 
+
+
+
+
+
+
+
+
+
+/*
+medi@query medi@query medi@query medi@query medi@query medi@query
+medi@query medi@query medi@query medi@query medi@query medi@query
+*/
 
 @media screen and (max-width: 768px) and (orientation:landscape){
     .menu{
