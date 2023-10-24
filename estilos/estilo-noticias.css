@@ -64,6 +64,20 @@
 }
 
 
+@media(max-width: 768px){
+    .cabecera-noticias{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation:landscape){
+
+    .cabecera-noticias {
+        margin-top: 75px;
+      }
+}
+
+
     
 
 
