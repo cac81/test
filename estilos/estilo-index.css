@@ -608,6 +608,7 @@ border-radius: 8px;
 .footer__google > div > p{
     color: white;
     font-size: 13px;
+    height: 60%;
 }
 
 .mapa1 > a, .mapa2 > a, .mapa3 > a{
@@ -628,6 +629,7 @@ width: 90%;
 display: flex;
 align-items:center;
 flex-direction: column;
+margin-top: 10px;
 
 }
 
@@ -1062,7 +1064,7 @@ flex-direction: column;
 
 .footer__google > div > p {
     color: white;
-    font-size: 10px;
+    font-size: 14px;
 
 
 
