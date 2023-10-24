@@ -51,8 +51,11 @@ function mostrarHorarios(medicos){
 }
 
 function selEspecialidad(espe){
-    
-   
+    if (filtrarLugar===""){
+        window.alert(" Debe selecionar el lugar de atencion")
+
+    }
+    else{
         let cardio = document.getElementsByClassName("pro-cardio");
         let clinica = document.getElementsByClassName("pro-clinica");
         let gine = document.getElementsByClassName("pro-gine");
@@ -139,7 +142,7 @@ switch (espe.value) {
     
     }
 
-
+    }
 }
 
 function selTurno(seleccion){
@@ -189,11 +192,6 @@ function selTurno(seleccion){
 {
 
     filtrarLugar = lugar.value;
-
-
-
-   
-
 
 
 }

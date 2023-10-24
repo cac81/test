@@ -64,9 +64,10 @@
             <form action="" class="for-lugar">
                 <label for="lugar-atencion" class="lab-lugares">Seleccione la sucursal donde desea atenderse</label>
                 <select name="lugar-atencion" id="lugar-atencion" onchange="selLugar(this);" >
-                  <option value="caba" id="caba">CABA</option>
-                  <option value="rosario" id="rosario">ROSARIO</option>
-                  <option value="cordoba" id="cordoba">CORDOBA</option>
+                    <option value="" hidden selected>Sucursales</option>
+                    <option value="caba" id="caba">CABA</option>
+                    <option value="rosario" id="rosario">ROSARIO</option>
+                    <option value="cordoba" id="cordoba">CORDOBA</option>
                   
                 </select>
                
@@ -80,7 +81,8 @@
             <form action="" class="for-obras">
                 <label for="obrassociales" class="lab-obras">Seleccione su obra social</label>
                 <select name="espe__name" id="obrassociales" >
-                  <option value="os1">Obra Social 1</option>
+                    <option value="" hidden selected>Obras Sociales</option>
+                    <option value="os1">Obra Social 1</option>
                   <option value="os2">Obra Social 2</option>
                   <option value="os3">Obra Social 3</option>
                   <option value="os4">Obra Social 4</option>
