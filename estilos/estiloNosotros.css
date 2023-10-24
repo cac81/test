@@ -37,23 +37,23 @@
   
 .img1 {
   float: right;
-  width: 450px;
+  width: 400px;
   height: auto;
-
+padding-left: 10px;
   border-radius: 20px
 }
 .img2 {
   float: left;
   width: 350px;
   height: auto;
- 
+ padding-right: 10px;
   border-radius: 20px
 }
 .img3 {
   float: right;
   width: 350px;
   height: auto;
-  
+  padding-left: 10px;
   border-radius: 20px
 }
 
@@ -66,10 +66,8 @@
     align-items: center;
   }
 
-  .imagenes1,
-  .imagenes2,
-  .imagenes3 {
-    margin: 100px 0;
+  .imagenes1 {
+    margin-top: 120px;
   }
   .img1 {
     float: none;
