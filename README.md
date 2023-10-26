@@ -46,7 +46,7 @@ DuckDuckGo para Android 5.1.75.1 (51751000)
 Desarrolladores
 
 Este proyecto esta siendo desarrollado en conjunto por Rubera Leonardo y Vincet Agostina
-Estudiantes de Codo A Codo comisión 25340.
+Estudiantes de Codo A Codo comisión 23540.
 
 Agradecimientos
 
