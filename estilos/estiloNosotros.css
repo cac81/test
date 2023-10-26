@@ -70,4 +70,22 @@ padding-left: 10px;
     margin-top: 120px;
     
  }
+ .img1 {
+  float: none;
+  width: 350px;
+  height: auto;
+ 
+}
+.img2 {
+  float: none;
+  width: 350px;
+  height: auto;
+ 
+}
+.img3 {
+  float: none;
+  width: 350px;
+  height: auto;
+  
+}
 }
