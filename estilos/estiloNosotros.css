@@ -37,7 +37,7 @@
   
 .img1 {
   float: right;
-  width: 400px;
+  width: 450px;
   height: auto;
 padding-left: 10px;
   border-radius: 20px
@@ -66,25 +66,10 @@ padding-left: 10px;
     align-items: center;
   }
 
-  .imagenes1 {
+  .imagenes1,
+  .imagenes2,
+  .imagenes3   {
     margin-top: 120px;
-  }
-  .img1 {
-    float: none;
-    width: 350px;
-    height: auto;
-   
-  }
-  .img2 {
-    float: none;
-    width: 350px;
-    height: auto;
-   
-  }
-  .img3 {
-    float: none;
-    width: 350px;
-    height: auto;
     
  }
 }
