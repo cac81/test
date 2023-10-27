@@ -283,7 +283,7 @@ color: white;
   
   #pnl_1 .estudios, #pnl_2 .estudios, #pnl_3 .estudios, #pnl_4 .estudios, #pnl_5 .estudios, #pnl_6 .estudios {
     margin-left: 60px;
-    text-align: left; /* Ajusta el texto a la izquierda */
+    text-align: left; 
   }
   #pnl_1 .estudios-lista, #pnl_2 .estudios-lista, #pnl_3 .estudios-lista, #pnl_4 .estudios-lista, #pnl_5 .estudios-lista, #pnl_6 .estudios-lista {
     margin-left: 70px;

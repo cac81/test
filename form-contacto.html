@@ -69,31 +69,33 @@
             <div class="contacto-ingreso-datos">
                 <div class="formulario-contacto">
                     <h3>Contactenos</h3>
-                    <form action="mailto:ejemplo@mail.com"; method="post" enctype="text/plain"  >
+                    <form action="https://formspree.io/f/xleyzzoa" method="POST" enctype="text/plain" id="for-contacto"  >
                         <p>
                             <label for="nombre">Nombre completo</label>
-                            <input type="text" name="nombre" maxlength="16" placeholder="Alberto Alvarez" required>
+                            <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Alberto Alvarez" required>
                         </p>
                         <p>
                             <label for="email">Direccion de Mail</label>
-                            <input type="email" name="email" maxlength="30" placeholder="direccion@ejemplo.com" required>
+                            <input type="email" name="email" id="email" maxlength="30" placeholder="direccion@ejemplo.com" required>
                         </p>
                         <p>
                             <label for="telefono">Su número de Teléfono</label>
-                            <input type="tel" name="telefono" placeholder="341 6554433">
+                            <input type="tel" name="telefono" id="telefono" placeholder="341 6554433">
                         </p>
                         <p>
-                            <label for="titulo">Título</label>
-                            <input type="text" maxlength="30" placeholder="ingrese el titulo de su mensaje" name="titulo">
+                            <label for="titulo-area">Título</label>
+                            <input type="text" id="titulo-area" maxlength="30" placeholder="ingrese el titulo de su mensaje" name="titulo-area">
                         </p>
                         <p class="mensaje">
-                           <label for="mensaje">Mensaje</label> 
-                            <textarea name="mensaje" rows="3" placeholder="Escriba aqui su mensaje" required></textarea>
+                           <label for="mensaje-area">Mensaje</label> 
+                            <textarea name="mensaje-area" id="mensaje-area" rows="3" placeholder="Escriba aqui su mensaje" required></textarea>
                         </p>
                         <p class="mensaje">
-                            <button>
+                            <button type="submit" id="btn-enviar">
                                 Enviar
                             </button>
+                            <p id="btn-enviar"></p>
+                            
                         </p>
                     </form>
                 </div>
@@ -167,22 +169,7 @@
             </div>
 
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
-   
-
-
+    <script src="javascript/js-contacto.js"></script>
 </body>
 </html>

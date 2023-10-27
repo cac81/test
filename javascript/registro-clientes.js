@@ -4,19 +4,28 @@ document.getElementById("btn__irRegistrarse").addEventListener("click", irRegist
 //var anchopagina = window.innerWidth;
 window.addEventListener("resize", anchoPage);
 
+var registro=0;
+
 
 
 
 
 //funcion email
-function email(loginCorreo){
+function validaremail(loginCorreo){
     
-    if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(loginCorreo))
+    
+	let campoemail = document.getElementById('reg-mail');
+	
+	
+	let formatovalido =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+    
+    
+    if (formatovalido.test(campoemail.value))
             {
-            window.alert("La dirección de email " + loginCorreo + " es correcta!.");
-            window.alert("Ingreso al sistema");
-            return true;
-
+           
+               
+                return true;
+              
             } 
             else 
             {
@@ -33,7 +42,7 @@ function valtexto(texto){
             if (!((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122) )) {
               alert("El campo usuario solo puede contener caracteres alfabéticos.");
               return false;
-                }
+                }else{return true;}
               
 
               /*regex /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}$/*/
@@ -49,7 +58,7 @@ function validartelefono(numero)
     let telefono = parseInt(numero);
 
     if (Number.isInteger(telefono)){
-        window.alert("telefono aceptado");
+        
         return true
     }
     else{
@@ -100,8 +109,8 @@ function inicioSesion(loginCorreo, loginContraseña)
 
             }
 
-        // validar emal
-        email(loginCorreo);
+       
+        validaremail(loginCorreo);
 
     
 
@@ -130,11 +139,17 @@ function registrarse(nombre, apellido, email, tel, contraseña, repContraseña){
              }
         
     
+    let a =valtexto(nombre);
+    let b= valtexto(apellido);
+    let c= validartelefono(tel);
+    let d=validarcontraseña(contraseña, repContraseña);
+    let e=validaremail(email);
+
+    if( a && b && c && d && e ){
+    window.alert("Se ha registrado con exito");}
+    else{window.alert("Fallo en el registro");}
     
-    valtexto(nombre);
-    valtexto(apellido);
-    validartelefono(tel);
-    validarcontraseña(contraseña, repContraseña);      
+  
 }
 
 
