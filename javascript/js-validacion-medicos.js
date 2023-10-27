@@ -19,10 +19,6 @@ function validarFormulario(usuario, contraseña)
               return false;
                 }
               
-
-              /*regex /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}$/*/
-          
-              
               alert("Ingreso al sistema");
               return true;
             }

@@ -1,15 +1,11 @@
-//llamada a funciones movimiento de cajas
+
 document.getElementById("btn__iniciar-sesion").addEventListener("click", irIniciarSesion);
 document.getElementById("btn__irRegistrarse").addEventListener("click", irRegistro);
 //var anchopagina = window.innerWidth;
 window.addEventListener("resize", anchoPage);
 
 
-//llamada a funciones validacion de input
-//document.getElementById("btn__entrar").addEventListener("click", inicioSesion);
-//document.getElementById("btn__registrarse").addEventListener("click", registrarse);
 
-//declaracion variables validacion
 
 
 //funcion email
@@ -76,13 +72,13 @@ function validarcontraseña(contra1, contra2)
      
     else (contra1 === contra2) 
     {
-       window.alert("contra iguales");
+       //window.alert("contra iguales");
         if (regex.test(contra1)){
-        window.alert("contraseña aceptada e iguales")
+        //window.alert("contraseña aceptada e iguales")
         return true;
         }
             else {
-            window.alert("las contraseñas coinciden, pero son debiles");
+          //  window.alert("las contraseñas coinciden, pero son debiles");
         return false;
         }
         
@@ -107,7 +103,7 @@ function inicioSesion(loginCorreo, loginContraseña)
         // validar emal
         email(loginCorreo);
 
-    /*regex /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}$/*/
+    
 
     
     
@@ -161,10 +157,10 @@ var contenedor_login_register = document.querySelector(".contenedor__login-regis
 var caja_trasera_login = document.querySelector(".caja__trasera-login");
 var caja_trasera_register = document.querySelector(".caja__trasera-register");
 
-    //FUNCIONES
+    
 
 function anchoPage(){
-    //if (anchopagina !== window.innerWidth){
+    
     if (window.innerWidth > 1019){
         
         if(contenedor_login_register.style.left == "410px"){
@@ -173,7 +169,7 @@ function anchoPage(){
             caja_trasera_register.style.display = "block";
             caja_trasera_login.style.display = "block";
             contenedor_login_register.style.left="10px";
-        /*caja_trasera_register.style.opacity = "1";*/}
+        }
     }else{
        
         caja_trasera_register.style.display = "flex";
@@ -184,7 +180,7 @@ function anchoPage(){
         formulario_register.style.display = "none";  
         
     }
-    //}
+    
 }
 
 anchoPage();

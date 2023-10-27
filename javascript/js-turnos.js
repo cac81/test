@@ -11,20 +11,20 @@ function ocultar(arreglo){
 function mostrar(arreglo){
     for (let i = 0; i < arreglo.length; i++)
     {
-        let leo = filtrarLugar;
+        let lug = filtrarLugar;
       
         let arVal = arreglo[i].value.split("-");
         let val=arVal[2]
         
-        if (leo === val){
+        if (lug === val){
         arreglo[i].style.display= 'block';
         }else{arreglo[i].style.display= 'none';}
-        if (leo === val){
+        if (lug === val){
             arreglo[i].style.display= 'block'; 
         } else{arreglo[i].style.display= 'none';
             
         }
-        if (leo === val){
+        if (lug === val){
             arreglo[i].style.display= 'block';
         }else{
             arreglo[i].style.display= 'none';
@@ -147,9 +147,9 @@ switch (espe.value) {
 
 function selTurno(seleccion){
 
-    let leo = medico.split("-");
-    leo[0]=leo[0].toUpperCase();
-    leo[1]=leo[1].toUpperCase();
+    let medi = medico.split("-");
+    medi[0]=medi[0].toUpperCase();
+    medi[1]=medi[1].toUpperCase();
     let dias =seleccion.id;
     let dia="";
     if(dias === "horario-1")
@@ -172,7 +172,7 @@ function selTurno(seleccion){
         
     
 
-    let confirmacion =confirm("Desea revervar el turno de las " +seleccion.textContent+ " para el dia "+ dia+" con el Dr./Dra "+leo[0] +" "+ leo[1] + " ?");
+    let confirmacion =confirm("Desea revervar el turno de las " +seleccion.textContent+ " para el dia "+ dia+" con el Dr./Dra "+medi[0] +" "+ medi[1] + " ?");
     
     if(confirmacion == true){
         window.alert("Acaba de confirmar su turno, a la brevedad recibira un mail con los detalles");
