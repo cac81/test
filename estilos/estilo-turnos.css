@@ -7,10 +7,9 @@
     align-items: center;
     width: 70%;
     margin: 10px 15%;
-    box-shadow: 0 0 20px 0 rgba(12, 0, 0, 0.993);
+    box-shadow: 0 0 10px 0 #c2c6ce;
     border-radius: 5%;
-    
-    background-color: #d9efed;
+    background-color:white;
     
     
 }
@@ -41,7 +40,7 @@ select {
 
   }
   .especialidades, .obras, .lugar{
-    border: 2px solid rgb(211, 202, 247);
+    border: 2px solid #3d4a6e;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -49,7 +48,8 @@ select {
     align-items: center;
     padding: 10px;
     margin: 25px 0;
-    box-shadow: 0 0 20px 0 rgba(12, 0, 0, 0.993);
+    background-color:#c2c6ce ;
+    
   }
   .lab-especialidades, .lab-lugares, .lab-obras{
     font-size: 20px;
@@ -70,7 +70,7 @@ select {
 
 
   .profesionales{
-    border: 2px solid rgb(211, 202, 247);
+    border: 2px solid #3d4a6e;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -79,7 +79,7 @@ select {
     padding: 10px;
     margin: 25px;
     display: none;
-    box-shadow: 0 0 20px 0 rgba(12, 0, 0, 0.993);
+    background-color:#c2c6ce ;
   }
   
   .for-profesionales{
@@ -99,13 +99,13 @@ select {
   
   
   .turnosdisponibles{
-    border: 2px solid rgb(211, 202, 247);
+    border: 2px solid #3d4a6e;
     width: 58%;
     border-radius: 15px;
     padding: 10px;
     margin: 25px 0;
     display: none;
-    box-shadow: 0 0 20px 0 rgba(12, 0, 0, 0.993);
+    background-color:#c2c6ce ;
   }
   h3{
     text-align: center;
@@ -126,7 +126,7 @@ select {
     border-radius: 15px;
   }
   .horario-1:hover, .horario-2:hover, .horario-3:hover{
-    background: #00baad;
+    background: #c2c6ce;
   }
  
   .turno-dia{
@@ -138,7 +138,7 @@ select {
 
   .turno-dia > button{
     
-    background: #577486;
+    background: #d9efed;
     border-radius: 15px;
   }
   .turno-horarios{
