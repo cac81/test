@@ -295,7 +295,7 @@ color: white;
    
 
 
- .aside{
+ .aside-carrucel{
     grid-area: aside;
     display: flex;
     color: black;
@@ -364,7 +364,7 @@ text-decoration: bl;
 }
 
 
-.main{
+.main-medios{
     grid-area: main;
     width: 100%;
     display: grid;
@@ -518,7 +518,7 @@ border-radius: 8px;
 
 
 
-.footer{
+.footer-todo{
     grid-area: footer;
     display: flex;
     
@@ -845,7 +845,7 @@ margin-top: 10px;
 
 
 
-    .aside{
+    .aside-carrucel{
         width: 98%;
         display: flex;
     }
@@ -940,7 +940,7 @@ margin-top: 10px;
 
 
 
-    .main{
+    .main-medios{
         grid-area: main;
         width: 100%;
         height: 600px;
@@ -1146,7 +1146,7 @@ medi@query medi@query medi@query medi@query medi@query medi@query
           }
         
 
-.footer{
+.footer-todo{
     display: flex;
     flex-direction: column;
 }
