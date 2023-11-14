@@ -14,18 +14,19 @@ var registro=0;
 function validaremail(loginCorreo){
     
     
-	let campoemail = document.getElementById('reg-mail');
+	/*let campoemail = document.getElementById('reg-mail');*/
+    let campoemail = loginCorreo;
 	
 	
 	let formatovalido =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
     
     
-    if (formatovalido.test(campoemail.value))
+    if (formatovalido.test(campoemail))
             {
            
                
                 return true;
-              
+                
             } 
             else 
             {
@@ -110,7 +111,9 @@ function inicioSesion(loginCorreo, loginContraseña)
             }
 
        
-        validaremail(loginCorreo);
+       if( validaremail(loginCorreo)){
+        alert("ha ingresado al sistema");
+       }
 
     
 

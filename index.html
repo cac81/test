@@ -12,15 +12,15 @@
 </head>
 <body>
     <div class="contenedor">
-        
-        <div class="menu">    
+        <header class="menu">
+            
             <div class="enc__home">
 
                <a href="index.html"><img src="imagenes/Logo/cureta logo.png" alt=""></a>
            
             </div>
             
-            <div class="enc__menu">
+            <div class="enc__menu"> <!--esto deberia ser nav-->
 
                 <input type="checkbox" class="check__menu" id="check-menu">
                 <label for="check-menu" class="check__boton">
@@ -48,9 +48,11 @@
                 </ul>
 
             </div>
-        </div>   
+        
+    </header>   
 
-       <div class="aside">
+    <aside class="aside">   
+    
             
         <div class="carrucel">
 
@@ -95,70 +97,73 @@
 
         </div>
 
-        </div>
+       
+    </aside>
         
-        <div class="main">      
+    <main class="main"> 
+          
             
 
-                    <div class="main__grid-turnos">
-                        <p><strong>MEDIOS PARA PEDIR TURNOS</strong></p>
-                    </div>
+         <div class="main__grid-turnos">
+            <p><strong>MEDIOS PARA PEDIR TURNOS</strong></p>
+         </div>
                      
-                    <div class="telefono">
-                        <div class="tel-icono">
-                            <i class="fas fa-headset"></i>                            
-                        </div>
+        <div class="telefono">
+            <div class="tel-icono">
+                <i class="fas fa-headset"></i>                            
+            </div>
                         
-                        <div class="txt">
-                            <h4>CENTRAL DE TURNOS</h4>	
-                            <div class="editor">
-                                <p>Central &nbsp;Telefónica
-                                <br><strong>1111 111 1111</strong>
-                                <br><strong>2222 222 2222</strong></p>
-                            </div>
-                        </div>			
-                    </div>
-                   
-
-                    <div class="what"> 
-                        <div class="what-ico">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="txt">
-                            <h4>TURNOS POR WHATSAPP</h4>	
-                            <div class="editor">
-                                <p>Desde donde estés, escribinos <br> y solicitá un turno al <strong>111 222 3333</strong></p>
-                            </div>
-                        </div>							
-                        <a href="https://api.whatsapp.com/send?phone=543414203040&amp;text=Me%20gustar%C3%ADa%20pedir%20un%20turno"  target="_blank">Acceder <i class="fas fa-long-arrow-alt-right"></i></a>
-                    
-                    </div>
-                   
-
-                    <div class="online">
-                        <div class="onl-ico">
-                            <i class="fa-solid fa-laptop"></i>
-                        </div>
-                        <div class="txt">
-                            <h4>TURNOS ONLINE</h4>	
-                            <div class="editor">
-                                <p>Solicite un turno sin moverse <br> de su hogar y sin esperar.</p>
-                            </div>
-                        </div>
-                        <a href="turnos.html" target="_blank">Acceder <i class="fas fa-long-arrow-alt-right"></i></a>				
-                    </div>
-
+            <div class="txt">
+                <h4>CENTRAL DE TURNOS</h4>	
+                <div class="editor">
+                    <p>Central &nbsp;Telefónica
+                    <br><strong>1111 111 1111</strong>
+                    <br><strong>2222 222 2222</strong></p>
+                </div>
+            </div>			
         </div>
+                   
 
+        <div class="what"> 
+            <div class="what-ico">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="txt">
+                <h4>TURNOS POR WHATSAPP</h4>	
+                <div class="editor">
+                    <p>Desde donde estés, escribinos <br> y solicitá un turno al <strong>111 222 3333</strong></p>
+                </div>
+            </div>							
+                
+                <a href="https://api.whatsapp.com/send?phone=543414203040&amp;text=Me%20gustar%C3%ADa%20pedir%20un%20turno"  target="_blank">Acceder <i class="fas fa-long-arrow-alt-right"></i></a>
+                    
+            </div>
+                   
 
-        <div class="servicio-medico">
+         <div class="online">
+            <div class="onl-ico">
+               <i class="fa-solid fa-laptop"></i>
+            </div>
+            <div class="txt">
+                <h4>TURNOS ONLINE</h4>	
+                <div class="editor">
+                    <p>Solicite un turno sin moverse <br> de su hogar y sin esperar.</p>
+                </div>
+            </div>
+                <a href="turnos.html" target="_blank">Acceder <i class="fas fa-long-arrow-alt-right"></i></a>				
+            </div>
+
+        </main>
+
+            <!--se deberia enrocar el div class servicio medico con el section-->
+        <section class="servicio-medico"> 
  
             <H1>Nuestros Servicios </H1>
             <p>El funcionamiento de <strong>CURETA CLINIC</strong> se apoya en tres pilares fundamentales: selección rigurosa del personal asistencial, dotación con tecnología de punta y comodidad de sus instalaciones.</p>
             <p>La institución procura un retorno a los valores tradicionales de la medicina, donde cobran importancia la estrecha relación del médico con su paciente, la calidad y calidez de la atención y el respeto que los profesionales de la salud merecen.</p>
             <p>Nuestro objetivo, mejorar la calidad de vida de cada persona, basados en la evidencia científica, con tecnología de vanguardia y contenido ético; en un ambiente cálido y respetuoso, centrado en el bienestar del paciente y su familia.</p>
 
-        <section class="servicio">
+        <div class="servicio">
 		    <div class="tabs">
                 <div class="tab-clinica">
                     <span class="diana" id="uno"></span>
@@ -348,11 +353,13 @@
 				</div>
 			</div>
 		</div>
-	</section>
-    </div>
+	</div>
+</section>
         
+       
+    
+    <footer class="footer">
         
-        <div class="footer">
 
             <div class="footer__redes">
 
@@ -400,7 +407,7 @@
                 <img src="imagenes/desarrollo-software.jpg" alt="">
             </div>
 
-        </div>
+        </footer>
 
 
 
