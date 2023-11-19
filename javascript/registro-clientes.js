@@ -88,7 +88,7 @@ function validarcontraseña(contra1, contra2)
         return true;
         }
             else {
-           window.alert("las contraseñas coinciden, pero son debiles");
+          //  window.alert("las contraseñas coinciden, pero son debiles");
         return false;
         }
         
