@@ -21,7 +21,7 @@ ul {
 
 
 .login-ingreso-datos {
-    box-shadow: 0 0 20px 0 rgba(12, 0, 0, 0.993);
+    box-shadow: 0 0 10px 0 rgba(12, 0, 0, 0.993);
     border-radius: 5%;
     
 }
@@ -31,7 +31,7 @@ ul {
 }
 
 .formulario-login{
-    background: #d9efed;
+    background: #c2c6ce;
     border-radius: 5%;
 }
 
@@ -61,12 +61,12 @@ ul {
     background: none;
     outline: 0;
     color: #000;
-    border-bottom: 1px solid #577486;
+    border-bottom: 1px solid #668dc0;
     font-size: 1em;
 }
 
 .formulario-login form button {
-    background: #00baad;
+    background: white;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -75,7 +75,7 @@ ul {
 
 .formulario-login form button:hover,
 .formulario-login form button:focus {
-    background: #577486;
+    background: #668dc0;
     color: #fff;
     transition: background-color 1s ease-out;
     outline: 0;

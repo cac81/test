@@ -19,7 +19,7 @@ ul {
 
 
 .contacto-ingreso-datos {
-    box-shadow: 0 0 20px 0 rgba(12, 0, 0, 0.993);
+    box-shadow: 0 0 10px 0  #c2c6ce;
     border-radius: 5%;
     
 }
@@ -29,7 +29,7 @@ ul {
 }
 
 .formulario-contacto{
-    background: #d9efed;
+    background: #c2c6ce;
     border-radius: 5%;
 }
 
@@ -64,7 +64,7 @@ ul {
     font-size: 1em;
 }
 .formulario-contacto form button {
-    background: #00baad;
+    background: white;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
