@@ -150,6 +150,7 @@ function registrarse(nombre, apellido, email, tel, contraseña, repContraseña){
 
     if( a && b && c && d && e ){
     window.alert("Se ha registrado con exito");}
+
     else{window.alert("Fallo en el registro");}
     
   
