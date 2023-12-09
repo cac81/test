@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo-index.css">
+    <link rel="stylesheet" href="estilos/estilo-turnos.css">
+    <script src="https://kit.fontawesome.com/5108c67185.js" crossorigin="anonymous"></script>
+
+    <title>Turnos Online</title>
+</head>
+<body class="contenedor">
+    
+    
+        
+       
+    <header class="menu">
+            
+        <div class="enc__home">
+
+           <a href="index.html"><img src="imagenes/Logo/cureta logo.png" alt="logo cureta clinic"></a>
+       
+        </div>
+        
+        <nav class="enc__menu"> 
+
+            <input type="checkbox" class="check__menu" id="check-menu">
+            <label for="check-menu" class="check__boton">
+                <i class="fa-solid fa-bars"></i>
+
+            </label>
+          
+                <ul class="enc__menu-ul">
+                 
+                    <li class="iten-menu"><a href="nosotros.html">NOSOTROS</a></li>
+                    <li class="iten-menu"><a href="medicos.html">PROFESIONALES</a></li>
+                    <li class="iten-menu"><a href="turnos.html">TURNOS ONLINE</a></li>
+                    <li class="iten-menu"><a href="form-contacto.html">CONTACTENOS</a></li>
+                 
+                </ul>
+
+            </nav>
+
+        <div class="enc__ingreso">
+
+            <ul class="enc__ingreso-ul">
+                <li class="enc__ingreso-li"><a href="form-reg.html">Ingreso Clientes</a></li>
+                <li class="enc__ingreso-li"><a href="log-in.html">Ingreso medico</a></li>
+                
+            </ul>
+
+        </div>
+    
+</header>   
+
+
+
+
+
+    <main class="contenedor-turnos">    
+       
+        <h1>Turnos online</h1>
+
+        <div class="lugar">
+
+            
+            <form action="" class="for-lugar">
+                <label for="lugar-atencion" class="lab-lugares">Seleccione la sucursal donde desea atenderse</label>
+                <select name="lugar-atencion" id="lugar-atencion" onchange="selLugar(this);" >
+                    <option value="" hidden selected>Sucursales</option>
+                    <option value="caba" id="caba">CABA</option>
+                    <option value="rosario" id="rosario">ROSARIO</option>
+                    <option value="cordoba" id="cordoba">CORDOBA</option>
+                  
+                </select>
+               
+          </form>
+        </div>
+        
+        
+        <div class="obras">
+
+            
+            <form action="" class="for-obras">
+                <label for="obrassociales" class="lab-obras">Seleccione su obra social</label>
+                <select name="espe__name" id="obrassociales" >
+                    <option value="" hidden selected>Obras Sociales</option>
+                    <option value="os1">Obra Social 1</option>
+                  <option value="os2">Obra Social 2</option>
+                  <option value="os3">Obra Social 3</option>
+                  <option value="os4">Obra Social 4</option>
+                  
+                </select>
+               
+          </form>
+        </div>
+       
+        <div class="especialidades">
+
+            
+            <form action="" class="for-especialidad">
+                <label for="especialidad" class="lab-especialidades">Seleccione la Especialidad</label>
+                <select name="espe__name" id="especialidad" onchange="selEspecialidad(this);">
+                  <option value="" hidden selected>especialidades</option>
+                  <option value="pediatria">Pediatria</option>
+                  <option value="clinica">Clinica Medica</option>
+                  <option value="cardiologia">Cardiologia</option>
+                  <option value="ginecologia">Ginecologia</option>
+                  <option value="dermatologia">Dermatologia</option>
+                  <option value="traumatologia">Traumatologia</option>
+                </select>
+               
+          </form>
+        </div>
+          
+        <div class="profesionales" id="profesionales">
+            <form action="" class="for-profesionales">
+                <label for="sel-prof" class="lab-profesionales">Seleccione el Profesional</label>
+                <select name="medico__name" id="sel-prof" onchange="mostrarHorarios(this);">
+                    <option value="" hidden selected>profesionales</option>
+                    <option value="ruiz-cecilia-rosario"  class="pro-cardio" id="ruiz-cecilia">Dra. Ruiz Cecilia</option>
+                    <option value="ramirez-jorge-caba" class="pro-cardio" id="ramirez-jorge">Dr. Ramirez Jorge</option>
+                    <option value="herrera-mario-cordoba" class="pro-cardio" id="herrera-mario">Dr. Herrera Mario</option>
+                    <option value="rodriguez-mauricio rosario" class="pro-cardio" id="rodriguez-mauricio">Dr. Rodriguez Mauricio</option>
+                    <option value="iglesias-maria-caba" class="pro-cardio" id="iglesias-maria">Dra. Iglesias Maria</option>
+                    <option value="millares-mariana-cordoba" class="pro-cardio" id="millares-mariana">Dra.Millares Mariana</option>
+                    <option value="rosa-juan-rosario" class="pro-cardio" id="rosa-juan">Dr. Rosa Juan</option>
+                    <option value="rivero-rosa-caba" class="pro-cardio" id="rivero-rosa">Dra Rvero Rosa</option>
+                    <option value="barreiro-carlos-cordoba" class="pro-cardio" id="barreiro-carlos">Dr. Barreiro Carlos</option>
+                    
+                    <option value="quiros-nicolas-rosario" class="pro-pedia" id="quiros-nicolas">Dr. Quiros Nicolas</option>
+                    <option value="gutierrez-alicia-rosario" class="pro-pedia" id="gutierrez-alicia">Dra. Gutierrez Alicia</option>
+                    <option value="lopez-carlos-caba" class="pro-pedia" id="lopez-carlos">Dr. Lopez Carlos</option>
+                    <option value="medina-mario-cordoba" class="pro-pedia" id="medina-mario">Dr. Medina Mario</option>
+                    <option value="puerta-francisco-rosario" class="pro-pedia" id="puerta-francisco">Dr. Puerta Francisco</option>
+                    <option value="soria-evangelina-caba" class="pro-pedia" id="soria-evangelina">Dra. Soria Evangelina</option>
+                    <option value="baeza-rebeca-cordoba" class="pro-pedia" id="baeza-rebeca">Dra. Baeza Rebeca</option>
+
+                    <option value="acosta-ana-rosario" class="pro-clinica" id="acosta-ana">Dra. Acosta Ana</option>
+                    <option value="martinez-ana-caba" class="pro-clinica" id="martinez-ana">Dra. Martinez Ana</option>
+                    <option value="romero-valeria-cordoba" class="pro-clinica" id="romero-valeria">Dra. Romero Valeria</option>
+                    <option value="vilches-antonio-rosario" class="pro-clinica" id="vilches-antonio">Dr. Vilches Antonio</option>
+                    <option value="callejeros-noah-caba" class="pro-clinica" id="callejeros-noah">Dr. Callejeros Noah</option>
+                    <option value="coronado-tania-cordoba" class="pro-clinica" id="coronado-tania">Dra. Coronado Tania</option>
+                    <option value="alfonso-marino-rosario" class="pro-clinica" id="alfonso-marino">Dr. Alfonso Marino</option>
+                    <option value="pastor-cesar-caba" class="pro-clinica" id="pastor-cesar">Dr. Pastor Cesar</option>
+                    <option value="rodas-esteban-cordoba" class="pro-clinica" id="rodas-esteban">Dr. Rodas Esteban</option>
+
+                    <option value="perez-cintia-rosario" class="pro-gine" id="perez-cintia">Dra. Perez Cintia</option>
+                    <option value="gomez-graciela-caba" class="pro-gine" id="gomez-graciela">Dra. Gomez Graciela</option>
+                    <option value="mira-maria-cordoba" class="pro-gine" id="mira-maria">Dra. Mira Maria</option>
+                    <option value="calleja-azucena-rosario" class="pro-gine" id="calleja-azucena">Dra. Calleja Azucena</option>
+                    <option value="villera-beatriz-caba" class="pro-gine" id="villera-beatriz">Dra. Villera Beatriz</option>
+                    <option value="lucas-pilar-cordoba" class="pro-gine" id="lucas-pilar">Dra. Lucas Pilar</option>
+                    <option value="rosado-noel-rosario" class="pro-gine" id="rosado-noel">Dr. Rosado Noel</option>
+                                       
+                    <option value="florez-martin-rosario" class="pro-trauma" id="florez-martin">Dr. Florez Martin</option>
+                    <option value="gimenez-martin-caba" class="pro-trauma" id="gimenez-martin">Dr. Gimenez Martin</option>
+                    <option value="gonzalez-victor-cordoba" class="pro-trauma" id="gonzalez-victor">Dr. Gonzalez Victor</option>
+                    <option value="alvaro-paul-rosario" class="pro-trauma" id="alvaro-paul">Dr. Alvaro Paul</option>
+                    <option value="saenz-alan-caba" class="pro-trauma" id="saenz-alan">Dr. Saenz Alan</option>
+                    <option value="andreu-isabel-cordoba" class="pro-trauma" id="andreu-isabel">Dra. Andreu Isabel</option>
+                    <option value="castillos-amanda-rosario" class="pro-trauma" id="castillos-amanda">Dr. Castillos Amanda</option>
+                    
+                    <option value="diaz-jorge-rosario" class="pro-derma" id="diaz-jorge">Dr. Diaz Jorge</option>
+                    <option value="sanchez-jose-caba" class="pro-derma" id="sanchez-jose">Dr. Sanchez Jose</option>
+                    <option value="flores-ramon-cordoba" class="pro-derma" id="flores-ramon">Dr. Flores Ramon</option>
+                    <option value="guerra-mercedes-rosario" class="pro-derma" id="guerra-mercedes">Dr. Guerra Mercedes</option>
+                    <option value="catalan-eva-caba" class="pro-derma" id="catalan-eva">Dra. Catalan Eva</option>
+                    <option value="uriarte-alexis-cordoba" class="pro-derma" id="uriarte-alexis">Dr. Uriarte Alexis</option>
+                    <option value="cruz-maria-rosario" class="pro-derma" id="cruz-maria">Dr. Cruz Maria</option>
+                    <option value="menendez-vanesa-caba" class="pro-derma" id="menendez-vanesa">Dr. Menendez Vanesa</option>
+                </select>
+                
+            </form>
+          </div>
+       
+          <div class="turnosdisponibles" id="horarios">
+
+            <h3>Proximos turnos disponibles</h3>
+            <div class="dias-disp" >
+
+                <div class="turno-dia">
+                    <button>Lunes</button>
+                    <div class="turno-horarios">
+                        <button class="horario-1" id="horario-1" type="button" onclick="selTurno(this);">11:00 Hs</button>
+                        <button class="horario-1" id="horario-1" type="button" onclick="selTurno(this);">11:20 Hs</button>
+                        <button class="horario-1" id="horario-1" type="button" onclick="selTurno(this);">11:40 Hs</button>
+                        <button class="horario-1" id="horario-1" type="button" onclick="selTurno(this);">12:00 Hs</button>
+                    </div>
+                </div>
+
+                <div class="turno-dia">
+                    <button>Miercoles</button>
+                    <div class="turno-horarios">
+                        <button class="horario-2" id="horario-2" type="button" onclick="selTurno(this);">15:00 Hs</button>
+                        <button class="horario-2" id="horario-2" type="button" onclick="selTurno(this);">15:40 Hs</button>
+                        <button class="horario-2" id="horario-2" type="button" onclick="selTurno(this);">16:20 Hs</button>
+                        <button class="horario-2" id="horario-2" type="button" onclick="selTurno(this);">16:40 Hs</button>
+                    </div>
+                </div>
+
+                <div class="turno-dia">
+                    <button>Viernes</button>
+                    <div class="turno-horarios">
+                        <button class="horario-3" id="horario-3" type="button" onclick="selTurno(this);">11:40 Hs</button>
+                        <button class="horario-3" id="horario-3" type="button" onclick="selTurno(this);">12:40 Hs</button>
+                        <button class="horario-3" id="horario-3" type="button" onclick="selTurno(this);">13:00 Hs</button>
+                        <button class="horario-3" id="horario-3" type="button" onclick="selTurno(this);">14:20 Hs</button>
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+
+          </div>
+
+
+        
+        </main>
+
+
+
+
+
+
+    <footer class="footer-todo">
+        
+
+        <div class="footer__redes">
+
+            <ul class="footer__redes-ul">
+                <li>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram "></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter "></i></a>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+        <div class="footer__google">
+            <p>NUESTRAS SUCURSALES</p>
+            
+            <div class="mapa1">
+                <p>San martin 1510 caba</p>
+                <a href="https://maps.app.goo.gl/gX51wjz5AHw8qnJg6" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.2643260907413!2d-60.66692570977339!3d-32.92308419677908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654ae5f88e23b%3A0x3aca70357c973d69!2sCSA%2C%20Gorriti%20243%2C%20S2013%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1695307689775!5m2!1ses!2sar" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Sucursal1</iframe> -->
+            </div>
+            <div class="mapa2">
+                <p>San martin 1520 - Rosario</p>
+                <a href="https://maps.app.goo.gl/SLswo5iqNM2K8FUV7" target="_blank" ><i class="fa-solid fa-location-dot"></i></a>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.5993643119607!2d-58.439188202454226!3d-34.57383779172218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5bfdfddaad7%3A0xc6fbe48a99bab64e!2sSantos%20Dumont%202436%2C%20C1426%20CABA!5e0!3m2!1ses!2sar!4v1695308125687!5m2!1ses!2sar" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Sucursal2</iframe> -->
+            </div>
+            <div class="mapa3">
+                <p>San martin 1520 - Cordoba</p>
+                <a href="https://maps.app.goo.gl/Zsm5aGrBSXEuNWJy8" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                
+                
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.37620031840214!2d-58.390956475073494!3d-34.6295763797843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb234bbac72f%3A0x767a3c88e769dac!2sAv.%20Entre%20R%C3%ADos%201812%2C%20C1133AAG%20CABA!5e0!3m2!1ses!2sar!4v1695308183753!5m2!1ses!2sar" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Sucursal3</iframe> -->
+            </div>
+
+        </div>
+
+        <div class="footer__desarro">
+            
+            <img src="imagenes/desarrollo-software.jpg" alt="Github del desarrollador">
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+   
+
+<script src="javascript/js-turnos.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.15;
+  
+  }
+.grilla-medicos{
+    display: grid;
+    grid-area: aside;
+  }
+
+  
+.grilla-medicos h1{
+    text-align: center;
+     
+    color: #2f3e47;
+    text-align: center;
+  }
+  
+  .grilla-medicos h2{
+    text-align: center;
+    color: #2f3e47;
+  }
+  
+  .grilla-medicos .tit{
+     
+    color: #2f3e47;
+    text-align: center;
+   padding-left: 45px;
+   padding-right: 45px;
+  }
+  
+    
+.section {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 #c2c6ce;
+    border-radius: 15px;
+    margin: 20px 20px;
+  }
+  
+  .section h2 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  #section_cardiologia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+  .cardiologo{
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  
+  
+  
+  width: 100%; 
+  max-width: 200px; 
+  }
+  .profesional > img{
+
+    width: 100%;
+  }
