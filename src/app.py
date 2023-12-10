@@ -88,7 +88,7 @@ class medicos(db.Model):  # Producto hereda de db.Model
     matricula = db.Column(db.String(20))
     dni = db.Column(db.Integer)
     especialidad = db.Column(db.String(20))
-    contraseña = db.Column(db.String(40))
+    contrasena = db.Column(db.String(40))
     lugatencion = db.Column(db.String(40))
     imagen = db.Column(db.String(255))
     email = db.Column(db.String(40))
@@ -97,7 +97,7 @@ class medicos(db.Model):  # Producto hereda de db.Model
     
     
 
-    def __init__(self, nombre, apellido, matricula, dni, especialidad, contraseña, lugatencion, imagen, email):
+    def __init__(self, nombre, apellido, matricula, dni, especialidad, contrasena, lugatencion, imagen, email):
         """
         Constructor de la clase Producto.
 
@@ -112,7 +112,7 @@ class medicos(db.Model):  # Producto hereda de db.Model
         self.matricula = matricula
         self.dni = dni
         self.especialidad = especialidad
-        self.contraseña = contraseña
+        self.contrasena = contrasena
         self.lugatencion = lugatencion
         self.imagen = imagen
         self.email = email
@@ -133,7 +133,7 @@ class medicosSchema(ma.Schema):
     para la clase Producto.
     """
     class Meta:
-        fields = ("id", "nombre", "apellido", "matricula", "dni", "especialidad", "contraseña", "lugatencion", "imagen", "email")
+        fields = ("id", "nombre", "apellido", "matricula", "dni", "especialidad", "contrasena", "lugatencion", "imagen", "email")
 
 medico_schema = medicosSchema()  # Objeto para serializar/deserializar un producto
 medicos_schema = medicosSchema(many=True)  # Objeto para serializar/deserializar múltiples productos
@@ -222,7 +222,7 @@ def crear_medicos():
     matricula = request.json["matricula"]
     dni = request.json["dni"]  # Obtiene el stock del producto del JSON proporcionado
     especialidad = request.json["especialidad"]
-    contraseña = request.json["contraseña"]
+    contrasena = request.json["contrasena"]
     lugatencion = request.json["lugatencion"]# Obtiene la imagen del producto del JSON proporcionado
     imagen = request.json["imagen"]
     email = request.json["email"]#obtiene el email
@@ -231,7 +231,7 @@ def crear_medicos():
     
     
     
-    nuevo_medico = medicos(nombre, apellido, matricula, dni, especialidad, contraseña, lugatencion, imagen, email)  # Crea un nuevo objeto Producto con los datos proporcionados
+    nuevo_medico = medicos(nombre, apellido, matricula, dni, especialidad, contrasena, lugatencion, imagen, email)  # Crea un nuevo objeto Producto con los datos proporcionados
     db.session.add(nuevo_medico)  # Agrega el nuevo producto a la sesión de la base de datos
     db.session.commit()  # Guarda los cambios en la base de datos
     return medico_schema.jsonify(nuevo_medico)  # Retorna el JSON del nuevo producto creado
@@ -256,7 +256,7 @@ def actualizar_medico(id):
     medico.matricula = request.json["matricula"]
     medico.dni = request.json["dni"]  # Obtiene el stock del producto del JSON proporcionado
     medico.especialidad = request.json["especialidad"]
-    medico.contraseña = request.json["contraseña"]
+    medico.contrasena = request.json["contrasena"]
     medico.lugatencion = request.json["lugatencion"]# Obtiene la imagen del producto del JSON proporcionado
     medico.imagen = request.json["imagen"]
     medico.email = request.json["email"]#obtiene el email

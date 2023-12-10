@@ -19,7 +19,7 @@ email:"",
 
 
 
-url:'https://grupocodoacodo.pythonanywhere.com/medicos'+id,
+url:'https://grupocodoacodo.pythonanywhere.com/medicos/'+id,
 //url:'https://comision23541.pythonanywhere.com/productos/'+id,
 }
 },
