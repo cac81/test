@@ -2,7 +2,7 @@ const { createApp } = Vue
 createApp({
 data() {
 return {
-pacientes:[],
+medicos:[],
 url:'https://grupocodoacodo.pythonanywhere.com/medicos',
 // si el backend esta corriendo local usar localhost 5000(si no lo subieron a pythonanywhere)
 //url:'https://comision23541.pythonanywhere.com/productos', // si ya lo subieron a pythonanywhere
@@ -62,9 +62,9 @@ grabar(){
 
     
     
-        var url = document.getElementById('imagen').files[0].name;
+      //  var url = document.getElementById('imagen').files[0].name;
         
-        var x="../imagenes/imgProfesionales/"+ url;
+       // var x="../imagenes/imgProfesionales/"+ url;
       
 
     
@@ -76,7 +76,7 @@ dni:this.dni,
 especialidad:this.especialidad,
 contrasena:this.contrasena,
 lugatencion:this.lugatencion,
-imagen:x,
+//imagen:x,
 email:this.email,
 
 }
