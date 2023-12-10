@@ -12,7 +12,7 @@ apellido:"",
 matricula:"",
 dni:0,
 especialidad:"",
-contraseña:"",
+contrasena:"",
 lugatencion:"",
 imagen:"",
 email:"",
@@ -35,7 +35,7 @@ this.apellido=data.apellido,
 this.matricula=data.matricula,
 this.dni=data.dni,
 this.especialidad=data.especialidad,
-this.contraseña=data.contrasena,
+this.contrasena=data.contrasena,
 this.lugatencion=data.lugatencion,
 this.imagen=data.imagen,
 this.email=data.email
@@ -48,9 +48,9 @@ this.error=true
 },
 modificar() {
 
-    var url = document.getElementById('imagen').files[0].name;
+    var dir = document.getElementById('imagen').files[0].name;
         
-    var x="../imagenes/imgProfesionales/"+ url;
+    var x="../imagenes/imgProfesionales/"+ dir;
 
 
 let medicos = {
@@ -59,7 +59,7 @@ let medicos = {
     matricula:this.matricula,
     dni:this.dni,
     especialidad:this.especialidad,
-    contraseña:this.contrasena,
+    contrasena:this.contrasena,
     lugatencion:this.lugatencion,
     imagen:x,
     email:this.email,
