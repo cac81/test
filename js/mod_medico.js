@@ -18,7 +18,8 @@ imagen:"",
 email:"",
 
 
-url:'http://localhost:5000/medicos/'+id,
+
+url:'https://grupocodoacodo.mysql.pythonanywhere-services.com/medicos/'+id,
 //url:'https://comision23541.pythonanywhere.com/productos/'+id,
 }
 },
@@ -34,7 +35,7 @@ this.apellido=data.apellido,
 this.matricula=data.matricula,
 this.dni=data.dni,
 this.especialidad=data.especialidad,
-this.contraseña=data.contraseña,
+this.contraseña=data.contrasena,
 this.lugatencion=data.lugatencion,
 this.imagen=data.imagen,
 this.email=data.email
@@ -58,7 +59,7 @@ let medicos = {
     matricula:this.matricula,
     dni:this.dni,
     especialidad:this.especialidad,
-    contraseña:this.contraseña,
+    contraseña:this.contrasena,
     lugatencion:this.lugatencion,
     imagen:x,
     email:this.email,

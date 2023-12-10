@@ -3,7 +3,7 @@ createApp({
 data() {
 return {
 pacientes:[],
-url:'http://localhost:5000/medicos',
+url:'https://grupocodoacodo.mysql.pythonanywhere-services.com/medicos',
 // si el backend esta corriendo local usar localhost 5000(si no lo subieron a pythonanywhere)
 //url:'https://comision23541.pythonanywhere.com/productos', // si ya lo subieron a pythonanywhere
 error:false,
@@ -74,7 +74,7 @@ apellido: this.apellido,
 matricula: this.matricula,
 dni:this.dni,
 especialidad:this.especialidad,
-contraseña:this.contraseña,
+contraseña:this.contrasena,
 lugatencion:this.lugatencion,
 imagen:x,
 email:this.email,

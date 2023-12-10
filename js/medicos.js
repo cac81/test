@@ -1,7 +1,18 @@
+
+
+
+
+
+
+
 //apirest
 
+
+
+
+
 document.addEventListener("DOMContentLoaded", async () => {
-    const Url = 'http://localhost:5000/medicos';
+    const Url = 'https://grupocodoacodo.mysql.pythonanywhere-services.com/medicos';
 
     const lista_cardiologos = document.getElementById('section_cardiologia');
     const lista_pediatria = document.getElementById('section_pediatria');
