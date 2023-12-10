@@ -12,7 +12,7 @@
 
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const Url = 'https://grupocodoacodo.mysql.pythonanywhere-services.com/medicos';
+    const Url = 'https://grupocodoacodo.pythonanywhere.com/medicos';
 
     const lista_cardiologos = document.getElementById('section_cardiologia');
     const lista_pediatria = document.getElementById('section_pediatria');
