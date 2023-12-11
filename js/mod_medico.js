@@ -49,7 +49,7 @@ this.error=true
 modificar() {
 
     function sacartxt(){
-        //0.- Recuperar datos
+        
         let file = document.getElementById("imagen").files[0];  
       
         const reader = new FileReader();
