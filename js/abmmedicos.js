@@ -60,11 +60,34 @@ location.reload();
 
 grabar(){
 
+    function sacartxt(){
+        //0.- Recuperar datos
+        let file = document.getElementById("imagen").files[0];  
+      
+        const reader = new FileReader();
+            reader.addEventListener('load', (event) => {
+            document.getElementById("imgPreview").src = event.target.result;
+        });
+      
+        reader.readAsDataURL(file);
+        return file;
+      }
     
     
-       var direccion = document.getElementById('imagen').files[0].name;
+   
+    
+    let texto= sacartxt();
+
         
-        var x="../imagenes/imgProfesionales/"+ direccion;
+    
+    
+    
+    
+    
+    var x="../imagenes/imgProfesionales/"+ texto.name;
+    
+    
+       
       
 
     
