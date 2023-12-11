@@ -48,9 +48,9 @@ this.error=true
 },
 modificar() {
 
-    //var dir = document.getElementById('imagen').files[0].name;
+    var direccion = document.getElementById('imagen').files[0].name;
         
-    //var x="../imagenes/imgProfesionales/"+ dir;
+    var x="../imagenes/imgProfesionales/"+ direccion;
 
 
 let medicos = {
@@ -61,7 +61,7 @@ let medicos = {
     especialidad:this.especialidad,
     contrasena:this.contrasena,
     lugatencion:this.lugatencion,
-    imagen:this.imagen,
+    imagen:x,
     email:this.email,
     
     

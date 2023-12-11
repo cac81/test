@@ -62,9 +62,9 @@ grabar(){
 
     
     
-      //  var url = document.getElementById('imagen').files[0].name;
+       var direccion = document.getElementById('imagen').files[0].name;
         
-       // var x="../imagenes/imgProfesionales/"+ url;
+        var x="../imagenes/imgProfesionales/"+ direccion;
       
 
     
@@ -76,7 +76,7 @@ dni:this.dni,
 especialidad:this.especialidad,
 contrasena:this.contrasena,
 lugatencion:this.lugatencion,
-imagen:this.imagen,
+imagen:x,
 email:this.email
 
 }
