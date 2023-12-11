@@ -61,7 +61,7 @@ let medicos = {
     especialidad:this.especialidad,
     contrasena:this.contrasena,
     lugatencion:this.lugatencion,
-    //imagen:x,
+    imagen:this.imagen,
     email:this.email,
     
     

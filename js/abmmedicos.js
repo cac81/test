@@ -76,8 +76,8 @@ dni:this.dni,
 especialidad:this.especialidad,
 contrasena:this.contrasena,
 lugatencion:this.lugatencion,
-//imagen:x,
-email:this.email,
+imagen:this.imagen,
+email:this.email
 
 }
 
