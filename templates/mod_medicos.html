@@ -7,6 +7,7 @@
 <!-- Bootstrap CSS v5.2.1 -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
 integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="../estilos/estilo-nuevo.css">
 </head>
 <body>
 <header id="header">
@@ -14,9 +15,9 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
 </header>
 <main>
 <div class="container" id="app">
-<form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-<h2>Editar Medicos </h2>
-<p>Precio:'"{{nombre}}"+"{{apellido}}"'</p>
+<form class="form_nuevo" >
+<h1>Editar Medicos </h1>
+<p class="p_prof">Profesional:      '{{nombre}}    {{apellido}}'</p>
 <div class="mb-3">
 <label for="id">Id</label>
 <input type="number" name="id" id="id" disabled v-model="id" >
@@ -65,7 +66,7 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
     <input type="email" name="email" id="email" v-model="email">
   </div>
 
-<button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
+<button type="button" class="btn btn-success btn_grabar" v-on:click="modificar()">Grabar</button>
 </form>
 </div>
 </main>

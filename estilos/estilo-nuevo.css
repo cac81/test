@@ -1,0 +1,85 @@
+#cabecera{
+    display: flex;
+    background-color: #304a6e;  
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;  
+    }
+    #contcabecera{
+
+        align-items: center;
+        text-align: center;
+        font-size: xx-large;
+       
+    }
+    .navbar-brand{
+        color: white;
+    }
+    .form_nuevo{
+        background-color: #c2c6ce;
+        margin:30px auto ;
+         width: 70%; 
+         padding: 20px;
+         box-shadow: 0 0 10px 0 #c2c6ce;
+         border-radius: 5%;
+    }
+    .form_nuevo > h1{
+        text-align: center;
+    }
+    .form_nuevo > div{
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #imagen{
+        text-align: center;
+    }
+
+    .form_nuevo > div > input{
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #304a6e;
+    border-bottom: 1px solid #577486;
+    font-size: 1em;
+    text-align: center;
+    }
+    label{
+        font-size: 20px;
+        margin: 2px;
+        width: 40%;
+        text-align: center;
+    }
+    input{
+        margin-left: 5px;
+    }
+    .btn_grabar{
+        background: white;
+        border: 0;
+        text-transform: uppercase;
+        padding: 1em;
+        color: #000;
+        display: block;
+        width: 200px;
+        margin: 10px auto;
+    
+    }
+
+    .btn_grabar:hover{
+        background: #577486 !important;
+        color: #fff;
+        transition: background-color 1s ease-out;
+        outline: 0;
+    }
+
+    .p_prof{
+        font-size: 20px;
+        display: block;
+        text-align: center;
+    }

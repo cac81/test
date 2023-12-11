@@ -7,6 +7,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
 integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
 crossorigin="anonymous">
+<link rel="stylesheet" href="../estilos/estilo-abmmedicos.css">
 </head>
 <body>
 <header id="header">
@@ -14,14 +15,14 @@ crossorigin="anonymous">
 </header>
 <main>
     <div id="app" class="container">
-        <h1>Administracion de pacientes</h1>
+        <h1 class="h1_main">Administracion de pacientes</h1>
         <br>
-        <a class="btn btn-primary" href="../templates/medico_nuevo.html">Nuevo</a>
+        <a class="btn btn-primary btn_nuevo" href="../templates/medico_nuevo.html">Nuevo</a>
         <br><br>
         <div v-if="error">
             <p>Lo sentimos , ........</p>
         </div>
-        <div v-else>
+        <div class="div_contenedor" v-else>
 <section v-if="cargando">
 <div class="spinner-border"></div>
 <p>Cargando .....</p>
@@ -63,8 +64,8 @@ crossorigin="anonymous">
 <img width="60" :src="medico.imagen" :alt="medico.nombre">
 </td>
 <td>
-<a class="btn btn-primary" :href="'./mod_medicos.html?id='+ medico.id" >Editar</a>
-<button type="button" class="btn btn-danger" v-on:click="eliminar(medico.id)" >Eliminar</button>
+<a class="btn btn-primary btn_editar" :href="'./mod_medicos.html?id='+ medico.id" >Editar</a>
+<button type="button" class="btn btn-danger btn_eliminar" v-on:click="eliminar(medico.id)" >Eliminar</button>
 </td>
 </tr>
 </tbody>
