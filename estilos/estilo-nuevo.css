@@ -18,8 +18,9 @@
     }
     .form_nuevo{
         background-color: #c2c6ce;
-        margin:30px auto ;
-         width: 70%; 
+        margin:60px auto ;
+         width: 70%;
+         max-width: 540px; 
          padding: 20px;
          box-shadow: 0 0 10px 0 #c2c6ce;
          border-radius: 5%;
